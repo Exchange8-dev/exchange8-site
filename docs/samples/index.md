@@ -27,7 +27,7 @@ curl -b jar.txt \
   }'
 ```
 
-Every submission passes the Ex8:Risk gate before the matching
+Every submission passes the Exchange8:Risk gate before the matching
 engine — a rejected order 4xxs deterministically with the reason.
 
 ## 2. Watch the market data

@@ -2,10 +2,10 @@
 sidebar_position: 5
 ---
 
-# Ex8:Risk — synchronous pre-trade authorization
+# Exchange8:Risk — synchronous pre-trade authorization
 
 The synchronous pre-trade authorization service: every order the
-Ex8:Gateway submission pipeline accepts passes this gate before the
+Exchange8:Gateway submission pipeline accepts passes this gate before the
 matching engine sees it — buying power, limits, and restricted
 securities checked on the submission path, never after the fact.
 

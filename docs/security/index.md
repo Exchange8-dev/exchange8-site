@@ -15,7 +15,7 @@ on `env_id`.
 1. **Deterministic matching** — the CLOB core is a pure function
    over the order event stream: the same inputs always produce the
    same fills, run to run.
-2. **Synchronous pre-trade gates** — every order passes Ex8:Risk
+2. **Synchronous pre-trade gates** — every order passes Exchange8:Risk
    before the matching engine sees it; a rejected order never
    reaches the book.
 3. **Event-sourced books** — Clearing projects the venue flow into a
@@ -27,7 +27,7 @@ on `env_id`.
    families run on the live stream with replayable evidence, not a
    post-hoc report.
 6. **One reference authority** — every tier resolves instruments,
-   venues, and calendars against Ex8:RefData by reference — never
+   venues, and calendars against Exchange8:RefData by reference — never
    cross-service table reads.
 
 Read the platform's five pillars at

@@ -2,7 +2,7 @@
 sidebar_position: 12
 ---
 
-# Ex8:RefData — the reference-data authority
+# Exchange8:RefData — the reference-data authority
 
 The reference-data authority: the security master, markets, MIC
 venues, currencies, order books, tick rules, market calendars, and

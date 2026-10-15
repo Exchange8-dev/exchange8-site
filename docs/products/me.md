@@ -2,10 +2,10 @@
 sidebar_position: 3
 ---
 
-# Ex8:ME — the matching engine
+# Exchange8:ME — the matching engine
 
 The deterministic central-limit-order-book matching core: it accepts
-order-entry events from Ex8:Gateway, Ex8:OMS, and Ex8:SOR re-posts,
+order-entry events from Exchange8:Gateway, Exchange8:OMS, and Exchange8:SOR re-posts,
 matches at price-time priority, and emits the fill events every
 downstream tier consumes.
 

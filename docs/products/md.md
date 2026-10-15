@@ -2,7 +2,7 @@
 sidebar_position: 11
 ---
 
-# Ex8:MD — consolidated market data
+# Exchange8:MD — consolidated market data
 
 The consolidated market-data publisher: it consumes matching-engine
 order/trade/status events and produces the public market-data tiers —

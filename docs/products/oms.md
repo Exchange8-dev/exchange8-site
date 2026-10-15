@@ -2,13 +2,13 @@
 sidebar_position: 4
 ---
 
-# Ex8:OMS — peg, iceberg & conditional orders
+# Exchange8:OMS — peg, iceberg & conditional orders
 
 The peg/iceberg supervision and conditional-order trigger engine: it
 supervises pegged orders (primary/market/midpoint peg, dark
 variant), slices iceberg orders into display pieces at the matching
 engine, and holds stop/stop-limit/trailing-stop/conditional (OCO,
-bracket) orders in its trigger engine — releasing them to Ex8:ME
+bracket) orders in its trigger engine — releasing them to Exchange8:ME
 only when their trigger fires.
 
 ## Use cases

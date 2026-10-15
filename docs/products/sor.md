@@ -2,11 +2,11 @@
 sidebar_position: 6
 ---
 
-# Ex8:SOR — smart order routing
+# Exchange8:SOR — smart order routing
 
 The smart order router: it routes orders to external venues and home
 again — consuming routing requests, resolving venue destinations,
-executing, consolidating fills, and re-posting to Ex8:ME so the home
+executing, consolidating fills, and re-posting to Exchange8:ME so the home
 market sees the full picture.
 
 ## Use cases

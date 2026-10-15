@@ -2,7 +2,7 @@
 sidebar_position: 13
 ---
 
-# Ex8:Regulatory — multi-jurisdiction reporting
+# Exchange8:Regulatory — multi-jurisdiction reporting
 
 The multi-jurisdiction regulatory reporting service: reportable
 order, trade, and quote activity normalizes into a single event

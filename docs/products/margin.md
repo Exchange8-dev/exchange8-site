@@ -2,7 +2,7 @@
 sidebar_position: 9
 ---
 
-# Ex8:Margin — derivatives risk engine
+# Exchange8:Margin — derivatives risk engine
 
 The asynchronous, stateful derivatives-risk engine: it owns the
 net-position ledger per (environment, account, contract) for

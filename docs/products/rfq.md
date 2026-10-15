@@ -2,7 +2,7 @@
 sidebar_position: 10
 ---
 
-# Ex8:RFQ — quote-driven FX trading
+# Exchange8:RFQ — quote-driven FX trading
 
 The quote-driven trading service: the Request-For-Quote engine for
 FX — clients broadcast an RFQ (pair, side, qty, tenor), all entitled

@@ -34,7 +34,7 @@ init SQL and re-run `vertical init`.
 
 - **Rust**: the `exchange8-sdk` shared plane (FIX/OUCH/ITCH codecs,
   Price-Qty math, event contracts) — see the [SDK page](/docs/sdk/)
-- **FIX/OUCH members**: connect sessions through Ex8:Gateway
+- **FIX/OUCH members**: connect sessions through Exchange8:Gateway
 - **App/API clients**: BFF-proxied REST/WebSocket order shapes
 - **Events**: the venue flow over Sentin8:Bus
 

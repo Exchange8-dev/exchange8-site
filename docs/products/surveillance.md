@@ -2,7 +2,7 @@
 sidebar_position: 14
 ---
 
-# Ex8:Surveillance — market abuse detection
+# Exchange8:Surveillance — market abuse detection
 
 The market-surveillance service: the compliance tier that detects
 market-abuse patterns in the trade/order event stream and turns

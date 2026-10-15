@@ -13,7 +13,7 @@
     },
     {
       "title": "Synchronous pre-trade gates",
-      "summary": "Every order passes Ex8:Risk authorization before the matching engine sees it — buying power, limits, and restrictions checked on the submission path."
+      "summary": "Every order passes Exchange8:Risk authorization before the matching engine sees it — buying power, limits, and restrictions checked on the submission path."
     },
     {
       "title": "Event-sourced ledger",
@@ -32,7 +32,7 @@
     {
       "slug": "gateway",
       "kind": "service",
-      "name": "Ex8:Gateway",
+      "name": "Exchange8:Gateway",
       "repo": "exchange8-gateway",
       "org": "Exchange8-dev",
       "summary": "The market-access front end: FIX 4.2 client sessions (with an OUCH binary-codec subset and BFF-proxied REST/WebSocket shapes), session protocol, sequence integrity, resends, heartbeats, order states above the fill.",
@@ -44,7 +44,7 @@
     {
       "slug": "me",
       "kind": "service",
-      "name": "Ex8:ME",
+      "name": "Exchange8:ME",
       "repo": "exchange8-me",
       "org": "Exchange8-dev",
       "summary": "The deterministic central-limit-order-book matching core: price-time priority, self-trade prevention, and the fill events every downstream tier consumes.",
@@ -56,7 +56,7 @@
     {
       "slug": "oms",
       "kind": "service",
-      "name": "Ex8:OMS",
+      "name": "Exchange8:OMS",
       "repo": "exchange8-oms",
       "org": "Exchange8-dev",
       "summary": "Peg/iceberg supervision and conditional-order triggers: pegged orders (primary/market/midpoint, dark variant), iceberg slice plans, stop/OCO/bracket triggers — released to ME only when they fire.",
@@ -68,7 +68,7 @@
     {
       "slug": "risk",
       "kind": "service",
-      "name": "Ex8:Risk",
+      "name": "Exchange8:Risk",
       "repo": "exchange8-risk",
       "org": "Exchange8-dev",
       "summary": "The synchronous pre-trade authorization service: every submitted order is checked (buying power, limits, restricted securities) before the matching engine sees it.",
@@ -80,7 +80,7 @@
     {
       "slug": "md",
       "kind": "service",
-      "name": "Ex8:MD",
+      "name": "Exchange8:MD",
       "repo": "exchange8-md",
       "org": "Exchange8-dev",
       "summary": "The consolidated market-data publisher: consumes matching-engine order/trade/status events and publishes the public market-data tiers (BBO, trades, depth).",
@@ -91,7 +91,7 @@
     {
       "slug": "sor",
       "kind": "service",
-      "name": "Ex8:SOR",
+      "name": "Exchange8:SOR",
       "repo": "exchange8-sor",
       "org": "Exchange8-dev",
       "summary": "The smart order router: routes orders to external venues and home again — routing requests, venue state, fill consolidation, and re-posts to ME.",
@@ -103,7 +103,7 @@
     {
       "slug": "clearing",
       "kind": "service",
-      "name": "Ex8:Clearing",
+      "name": "Exchange8:Clearing",
       "repo": "exchange8-clearing",
       "org": "Exchange8-dev",
       "summary": "The event-sourced order/trade ledger: consumes lifecycle events from the venue flow and projects them into a deterministic SQL ledger of positions and trades.",
@@ -115,7 +115,7 @@
     {
       "slug": "settlement",
       "kind": "service",
-      "name": "Ex8:Settlement",
+      "name": "Exchange8:Settlement",
       "repo": "exchange8-settlement",
       "org": "Exchange8-dev",
       "summary": "External settlement integrations: novation (CCP substitution), custody and collateral for crypto and fiat rails, give-up/give-in flows.",
@@ -127,7 +127,7 @@
     {
       "slug": "margin",
       "kind": "service",
-      "name": "Ex8:Margin",
+      "name": "Exchange8:Margin",
       "repo": "exchange8-margin",
       "org": "Exchange8-dev",
       "summary": "The asynchronous derivatives-risk engine: net-position ledger per (env, account, contract) for futures, perpetuals, and options; revalues and issues margin calls.",
@@ -139,7 +139,7 @@
     {
       "slug": "rfq",
       "kind": "service",
-      "name": "Ex8:RFQ",
+      "name": "Exchange8:RFQ",
       "repo": "exchange8-rfq",
       "org": "Exchange8-dev",
       "summary": "The quote-driven trading engine for FX: clients broadcast RFQs (pair, side, qty, tenor), entitled liquidity providers respond with two-way prices inside a bounded window.",
@@ -151,7 +151,7 @@
     {
       "slug": "refdata",
       "kind": "service",
-      "name": "Ex8:RefData",
+      "name": "Exchange8:RefData",
       "repo": "exchange8-refdata",
       "org": "Exchange8-dev",
       "summary": "The reference-data authority: security master, markets, MIC venues, currencies, order books, tick rules, market calendars, customer/firm registration.",
@@ -163,7 +163,7 @@
     {
       "slug": "regulatory",
       "kind": "service",
-      "name": "Ex8:Regulatory",
+      "name": "Exchange8:Regulatory",
       "repo": "exchange8-regulatory",
       "org": "Exchange8-dev",
       "summary": "Multi-jurisdiction regulatory reporting: reportable order/trade/quote activity normalized into one event shape and fanned out to every configured jurisdiction.",
@@ -175,7 +175,7 @@
     {
       "slug": "surveillance",
       "kind": "service",
-      "name": "Ex8:Surveillance",
+      "name": "Exchange8:Surveillance",
       "repo": "exchange8-surveillance",
       "org": "Exchange8-dev",
       "summary": "Market surveillance: the eight regulatory detection families (spoofing, layering, wash trades, and more) run on the live stream and turn detections into reviewable cases.",
@@ -187,7 +187,7 @@
     {
       "slug": "vfeeds",
       "kind": "service",
-      "name": "Ex8:VFeeds",
+      "name": "Exchange8:VFeeds",
       "repo": "exchange8-vfeeds",
       "org": "Exchange8-dev",
       "summary": "External venue feeds: consolidates BBO from outside venues, maintains the index quotes the peg and SOR tiers consume.",

@@ -2,7 +2,7 @@
 sidebar_position: 8
 ---
 
-# Ex8:Settlement — external settlement integrations
+# Exchange8:Settlement — external settlement integrations
 
 The external settlement integrations service: novation (the central
 counterparty substitutes itself for both original counterparties per

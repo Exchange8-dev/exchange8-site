@@ -14,32 +14,32 @@ app.
 ```mermaid
 graph TD
     subgraph access["Market access"]
-        GW["Ex8:Gateway<br/>(FIX 4.2 / OUCH / REST)"]
+        GW["Exchange8:Gateway<br/>(FIX 4.2 / OUCH / REST)"]
     end
     subgraph matching["Matching tier"]
-        OMS["Ex8:OMS<br/>(peg / iceberg / conditional)"]
-        ME["Ex8:ME<br/>(deterministic CLOB)"]
-        RISK["Ex8:Risk<br/>(pre-trade gate)"]
+        OMS["Exchange8:OMS<br/>(peg / iceberg / conditional)"]
+        ME["Exchange8:ME<br/>(deterministic CLOB)"]
+        RISK["Exchange8:Risk<br/>(pre-trade gate)"]
     end
     subgraph data["Market data"]
-        MD["Ex8:MD"]
-        VF["Ex8:VFeeds"]
-        RD["Ex8:RefData"]
+        MD["Exchange8:MD"]
+        VF["Exchange8:VFeeds"]
+        RD["Exchange8:RefData"]
     end
     subgraph post["Post-trade"]
-        CLR["Ex8:Clearing"]
-        SET["Ex8:Settlement"]
-        MAR["Ex8:Margin"]
-        RFQ["Ex8:RFQ"]
+        CLR["Exchange8:Clearing"]
+        SET["Exchange8:Settlement"]
+        MAR["Exchange8:Margin"]
+        RFQ["Exchange8:RFQ"]
     end
     subgraph compliance["Compliance"]
-        REG["Ex8:Regulatory"]
-        SUR["Ex8:Surveillance"]
+        REG["Exchange8:Regulatory"]
+        SUR["Exchange8:Surveillance"]
     end
     APP["eExchange app"] -->|"via Sentin8:BFF"| GW
     GW --> RISK --> ME
     OMS --> ME
-    SOR["Ex8:SOR"] --> ME
+    SOR["Exchange8:SOR"] --> ME
     ME --> MD & CLR
     CLR --> SET & MAR
     GW & ME --> REG & SUR

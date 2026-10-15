@@ -2,13 +2,13 @@
 sidebar_position: 2
 ---
 
-# Ex8:Gateway — market access
+# Exchange8:Gateway — market access
 
 The market-access front end: it terminates FIX 4.2 client sessions
 (with an OUCH binary-codec subset and BFF-proxied REST/WebSocket
 order shapes), runs the FIX session protocol (logon, sequence
 integrity, resends, heartbeats), and owns the order states above the
-fill. Books and fills belong to Ex8:ME.
+fill. Books and fills belong to Exchange8:ME.
 
 ## Use cases
 

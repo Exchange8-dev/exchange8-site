@@ -2,7 +2,7 @@
 sidebar_position: 7
 ---
 
-# Ex8:Clearing — the event-sourced ledger
+# Exchange8:Clearing — the event-sourced ledger
 
 The event-sourced order/trade ledger: it consumes order and trade
 lifecycle events from the venue flow and projects them into a

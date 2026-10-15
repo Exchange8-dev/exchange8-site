@@ -2,7 +2,7 @@
 sidebar_position: 15
 ---
 
-# Ex8:VFeeds — external venue feeds
+# Exchange8:VFeeds — external venue feeds
 
 External venue feeds, consolidated BBO, and index quotes: VFeeds
 consolidates outside-venue BBO, maintains the index quotes the peg

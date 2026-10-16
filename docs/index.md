@@ -2,13 +2,13 @@
 sidebar_position: 1
 ---
 
-# Exchange8 — the capital-markets vertical
+# Exchange8 - the capital-markets vertical
 
 Exchange8 is a full exchange / MTF / ATS platform on Sentin8:
 fourteen Rust services covering market access (FIX/OUCH), a
 deterministic matching engine, peg and conditional order supervision,
 smart order routing, clearing, margin, market data, reference data,
-regulatory reporting, and surveillance — plus the eExchange trading
+regulatory reporting, and surveillance - plus the eExchange trading
 app.
 
 ```mermaid

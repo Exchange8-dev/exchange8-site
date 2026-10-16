@@ -2,7 +2,7 @@
 sidebar_position: 9
 ---
 
-# Exchange8:Margin — derivatives risk engine
+# Exchange8:Margin - derivatives risk engine
 
 The asynchronous, stateful derivatives-risk engine: it owns the
 net-position ledger per (environment, account, contract) for
@@ -11,12 +11,12 @@ events; and issues margin calls.
 
 ## Use cases
 
-- **Net-position ledger** — per-account, per-contract positions for
+- **Net-position ledger** - per-account, per-contract positions for
   listed derivatives; opening/closing events project into the
   authoritative position state.
-- **Revaluation** — marks drive position revaluation on the
+- **Revaluation** - marks drive position revaluation on the
   configured cadence (scheduled platform work).
-- **Margin calls** — shortfall detection issues calls with the full
+- **Margin calls** - shortfall detection issues calls with the full
   input snapshot; calls settle through the clearing tier's
   obligations.
 
@@ -24,8 +24,8 @@ events; and issues margin calls.
 
 The complete detail lives in this product's sub-pages:
 
-- [Architecture (DDD)](design) — the full document, harvested from the unit's repository at build time.
-- [Business rules (BRD)](business) — the full document, harvested from the unit's repository at build time.
-- [Security](security) — the full document, harvested from the unit's repository at build time.
-- [Overview (repo README)](/docs/reference/margin/) — the maintainer's README in the consolidated reference section.
+- [Architecture (DDD)](design) - the full document, harvested from the unit's repository at build time.
+- [Business rules (BRD)](business) - the full document, harvested from the unit's repository at build time.
+- [Security](security) - the full document, harvested from the unit's repository at build time.
+- [Overview (repo README)](/docs/reference/margin/) - the maintainer's README in the consolidated reference section.
 

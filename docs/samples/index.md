@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Samples
 
-First calls against a running exchange8 deployment — through the BFF
+First calls against a running exchange8 deployment - through the BFF
 proxy from cURL/Dart, and over FIX from a member session.
 
 ## 1. Submit an order (app/API shape)
@@ -28,7 +28,7 @@ curl -b jar.txt \
 ```
 
 Every submission passes the Exchange8:Risk gate before the matching
-engine — a rejected order 4xxs deterministically with the reason.
+engine - a rejected order 4xxs deterministically with the reason.
 
 ## 2. Watch the market data
 
@@ -63,7 +63,7 @@ await bff.post('gateway', '/v1/orders', body: {
 ```
 
 Gateway terminates the session with sequence integrity, resends,
-and heartbeats — the same order then rides the identical risk gate
+and heartbeats - the same order then rides the identical risk gate
 and matching core as the API shape.
 
 ## 5. From Rust (vertical consumer)
@@ -76,5 +76,5 @@ let print = codec::decode_trade(&frame)?;
 ```
 
 Fixed/Price-Qty math and protocol codecs come from the vertical's
-shared SDK plane — one place, consumed by every service and
+shared SDK plane - one place, consumed by every service and
 integrator.

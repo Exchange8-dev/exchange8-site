@@ -1,4 +1,4 @@
-# README.md: Exchange8:Site — exchange8.dev
+# README.md: Exchange8:Site - exchange8.dev
 
 > The Exchange8 public website at [exchange8.dev](https://exchange8.dev): every
 > product, app, and SDK of the vertical, with its domain invariants
@@ -12,12 +12,12 @@ exchange8.dev is the Exchange8 vertical's product site: a landing page
 detailing all fourteen products and one apps, per-product
 pages with use cases and API surfaces, the vertical's security
 invariants, developer lifecycle, samples, and a **Reference** section
-harvested at build time from each unit repo's own docs — the
+harvested at build time from each unit repo's own docs - the
 repositories stay the source of truth.
 
 ## 2. Motivation
 
-An exchange's evaluation team needs the market guarantees up front: deterministic matching, synchronous pre-trade risk, event-sourced books, and surveillance as a first-class tier — plus the full tier map of fourteen services. This site is that layer, harvested so marketing never drifts from the code.
+An exchange's evaluation team needs the market guarantees up front: deterministic matching, synchronous pre-trade risk, event-sourced books, and surveillance as a first-class tier - plus the full tier map of fourteen services. This site is that layer, harvested so marketing never drifts from the code.
 
 ## 3. Architecture
 

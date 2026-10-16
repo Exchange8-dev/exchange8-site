@@ -3,29 +3,29 @@
   "name": "Exchange8",
   "org": "Exchange8-dev",
   "domain": "exchange8.dev",
-  "tagline": "Capital markets on Sentin8 \u2014 a deterministic matching engine with FIX/OUCH access, peg and algorithmic order supervision, smart order routing, clearing, margin, and multi-jurisdiction regulation.",
+  "tagline": "Capital markets on Sentin8 — a deterministic matching engine with FIX/OUCH access, peg and algorithmic order supervision, smart order routing, clearing, margin, and multi-jurisdiction regulation.",
   "accent": "#2E9B8F",
-  "pillarsLead": "Exchange8 inherits the Sentin8 security model and adds market guarantees \u2014 deterministic matching, reproducible event sourcing, and synchronous pre-trade authorization on every order.",
+  "pillarsLead": "Exchange8 inherits the Sentin8 security model and adds market guarantees — deterministic matching, reproducible event sourcing, and synchronous pre-trade authorization on every order.",
   "pillars": [
     {
       "title": "Deterministic matching",
-      "summary": "The central-limit-order-book core is a pure function over order events \u2014 the same input stream always produces the same fills, run to run."
+      "summary": "The central-limit-order-book core is a pure function over order events — the same input stream always produces the same fills, run to run."
     },
     {
       "title": "Synchronous pre-trade gates",
-      "summary": "Every order passes Exchange8:Risk authorization before the matching engine sees it \u2014 buying power, limits, and restrictions checked on the submission path."
+      "summary": "Every order passes Exchange8:Risk authorization before the matching engine sees it — buying power, limits, and restrictions checked on the submission path."
     },
     {
       "title": "Event-sourced ledger",
-      "summary": "Clearing consumes order/trade lifecycle events and projects them into a deterministic SQL ledger \u2014 the books are rebuildable from replay."
+      "summary": "Clearing consumes order/trade lifecycle events and projects them into a deterministic SQL ledger — the books are rebuildable from replay."
     },
     {
       "title": "Reproducible derivatives risk",
-      "summary": "Margin revalues positions per (env, account, contract) from the reference-data curves and mark events \u2014 an asynchronous, stateful engine, auditable end to end."
+      "summary": "Margin revalues positions per (env, account, contract) from the reference-data curves and mark events — an asynchronous, stateful engine, auditable end to end."
     },
     {
       "title": "Surveillance as a first-class tier",
-      "summary": "The eight regulatory detection families run on the live trade/order stream and turn detections into reviewable cases \u2014 compliance is not an afterthought."
+      "summary": "The eight regulatory detection families run on the live trade/order stream and turn detections into reviewable cases — compliance is not an afterthought."
     }
   ],
   "units": [
@@ -59,7 +59,7 @@
       "name": "Exchange8:OMS",
       "repo": "exchange8-oms",
       "org": "Exchange8-dev",
-      "summary": "Peg/iceberg supervision and conditional-order triggers: pegged orders (primary/market/midpoint, dark variant), iceberg slice plans, stop/OCO/bracket triggers \u2014 released to ME only when they fire.",
+      "summary": "Peg/iceberg supervision and conditional-order triggers: pegged orders (primary/market/midpoint, dark variant), iceberg slice plans, stop/OCO/bracket triggers — released to ME only when they fire.",
       "scopes": [
         "exchange8:oms:peg:write",
         "exchange8:oms:conditional:write"
@@ -94,7 +94,7 @@
       "name": "Exchange8:SOR",
       "repo": "exchange8-sor",
       "org": "Exchange8-dev",
-      "summary": "The smart order router: routes orders to external venues and home again \u2014 routing requests, venue state, fill consolidation, and re-posts to ME.",
+      "summary": "The smart order router: routes orders to external venues and home again — routing requests, venue state, fill consolidation, and re-posts to ME.",
       "scopes": [
         "exchange8:sor:routes:write",
         "exchange8:sor:fills:read"
@@ -203,7 +203,7 @@
       "name": "eExchange",
       "repo": "exchange8-eexchange",
       "org": "Exchange8-dev",
-      "summary": "The exchange trading app: order entry, market data, account positions \u2014 for members and desk operators."
+      "summary": "The exchange trading app: order entry, market data, account positions — for members and desk operators."
     }
   ],
   "sdks": [
@@ -218,14 +218,14 @@
     }
   ],
   "showcaseTitle": "Built on the Sentin8 platform",
-  "showcaseLead": "Exchange8 contains no platform infrastructure of its own \u2014 identity, events, storage, scheduling, and supervision are consumed from the platform.",
+  "showcaseLead": "Exchange8 contains no platform infrastructure of its own — identity, events, storage, scheduling, and supervision are consumed from the platform.",
   "showcase": [
     {
       "slug": "sentin8",
-      "name": "Sentin8 \u2014 the platform",
+      "name": "Sentin8 — the platform",
       "chip": "sentin8.dev",
       "accent": "#D4AF37",
-      "summary": "17 services: identity, events, storage, workflows, scheduling \u2014 everything exchange8 doesn't rebuild.",
+      "summary": "17 services: identity, events, storage, workflows, scheduling — everything exchange8 doesn't rebuild.",
       "href": "https://sentin8.dev/"
     },
     {
@@ -233,37 +233,9 @@
       "name": "Trade8",
       "chip": "trade8.dev",
       "accent": "#B85450",
-      "summary": "The broker-side trading vertical \u2014 desk, router, and feeds against any market.",
+      "summary": "The broker-side trading vertical — desk, router, and feeds against any market.",
       "href": "https://trade8.dev/"
     }
   ],
-  "crossrefs": [],
-  "eyebrow": "Capital markets \u00b7 exchange / MTF / ATS on Sentin8",
-  "stats": [
-    {
-      "value": "14",
-      "label": "services"
-    },
-    {
-      "value": "1",
-      "label": "deterministic CLOB"
-    },
-    {
-      "value": "8",
-      "label": "surveillance families"
-    },
-    {
-      "value": "0",
-      "label": "float drift"
-    }
-  ],
-  "code": {
-    "title": "submit an order (FIX)",
-    "lang": "text",
-    "lines": [
-      "8=FIX.4.2|35=D|49=MEMBER|56=EXCHG|11=ord-002",
-      "|55=AAPL|54=1|38=100|40=2|44=182.50",
-      "# passes Exchange8:Risk \u2192 deterministic match \u2192 event-sourced ledger"
-    ]
-  }
+  "crossrefs": []
 }

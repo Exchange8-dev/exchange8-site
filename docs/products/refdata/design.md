@@ -105,7 +105,7 @@ graph TD
     ROUTER --> HEALTH
     SECH --> TABLES
     SECH -.-> CACORP
-    XREF -. .-> CACORP
+    XREF -.-> CACORP
     TABLES --> OB
     TABLES --> JRNL
     RELAY --> OB
@@ -336,7 +336,7 @@ erDiagram
     SECURITY {
         uuid id PK
         uuid env_id
-        text symbol UK_per_env
+        text symbol UK "unique per env"
         text isin
         text security_type "Equity Bond Fund Warrant Future Option Crypto Fx"
         text currency FK
@@ -378,7 +378,7 @@ erDiagram
         numeric lis_exchange_rate
     }
     VENUE {
-        text mic PK_per_env
+        text mic PK "unique per env"
         uuid env_id
         text name
     }
@@ -556,7 +556,7 @@ stateDiagram-v2
     ex_date --> record_date : cron transition at record-date
     record_date --> pay_date : cron transition at pay-date
     pay_date --> [*] : terminal - delivery executed by Exchange8:Settlement
-    note right of announced : adjustments to positions apply at ex-date via exchange8:clearing:position:adjusted consumers
+    note right of announced : adjustments to positions apply at ex-date via exchange8-clearing-position-adjusted consumers
     note right of record_date : entitlement snapshot rows written at record-date
 ```
 

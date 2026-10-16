@@ -338,7 +338,7 @@ erDiagram
         uuid env_id
         text symbol UK "unique per env"
         text isin
-        text security_type "Equity Bond Fund Warrant Future Option Crypto Fx"
+        text security_type "Equity, Bond, Fund, Warrant, Future, Option, Crypto, Fx"
         text currency FK
         boolean halted
         text trading_state "O C"

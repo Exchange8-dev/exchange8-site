@@ -204,7 +204,7 @@ sequenceDiagram
     R->>BUS: POST /v1/produce (M2M token, scope sentin8:bus:produce)
     BUS-->>MD: bus:{env}:{family} stream entry
     MD->>BUS: consume + POST /v1/ack (bus-client)
-    Note over BBO,MD: Note over R: Relay fail-open — Bus outage leaves rows relayed=false, 5 s poll retries
+    Note over BBO,MD: Relay fail-open: Bus outage leaves rows relayed=false, 5 s poll retries
 ```
 
 ### Request family - index computation

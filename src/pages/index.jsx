@@ -2,7 +2,7 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import {
-  Hero, Section, ProductGrid, AppGrid, SdkGrid, VerticalShowcase, SecurityPillars,
+  Hero, Section, StartHere, ProductGrid, AppGrid, SdkGrid, VerticalShowcase, SecurityPillars,
 } from '@sentin8/site-engine/components';
 import site from '../../site.json';
 
@@ -22,6 +22,25 @@ export default function Home() {
             { label: 'GitHub', href: 'https://github.com/' + site.org },
           ]}
         />
+        <StartHere items={[
+          {
+            title: 'Venue tour',
+            description: 'What Exchange8 is — market access, matching, clearing, regulation, the full 14-service tier map.',
+            href: '/docs',
+            primary: true,
+          },
+          {
+            title: 'Security',
+            description: 'Market guarantees: deterministic matching, synchronous pre-trade gates, event-sourced books.',
+            href: '/docs/security',
+          },
+          {
+            title: 'Connect',
+            description: 'FIX 4.2 / OUCH member connectivity, the app, and the developer quickstart.',
+            href: '/docs/developers',
+          },
+        ]} />
+
 
         {site.units?.length ? (
           <Section

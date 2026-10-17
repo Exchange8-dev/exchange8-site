@@ -5,7 +5,7 @@ mdx:
   format: md
 custom_edit_url: https://github.com/Exchange8-dev/exchange8-vfeeds/edit/main/DESIGN.md
 ---
-# DESIGN.md: Exchange8:VFeeds - Detailed Design Document
+# Exchange8:VFeeds - Detailed Design Document
 
 > Wire-level construction of the external venue feeds service. For the
 > overview read `README.md`; for business functionality read `BUSINESS.md`.

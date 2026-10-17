@@ -5,7 +5,7 @@ mdx:
   format: md
 custom_edit_url: https://github.com/Exchange8-dev/exchange8-md/edit/main/BUSINESS.md
 ---
-# BUSINESS.md: Exchange8:MD - Business Requirements & Functionality
+# Exchange8:MD - Business Requirements & Functionality
 
 > Audience: product owners, business analysts, and anyone evaluating what
 > Exchange8:MD **does for the business**. For architecture read `README.md`;

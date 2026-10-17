@@ -5,7 +5,7 @@ mdx:
   format: md
 custom_edit_url: https://github.com/Exchange8-dev/exchange8-eexchange/edit/main/DESIGN.md
 ---
-# DESIGN.md: eExchange (Exchange8 Trading App) - Detailed Design Document
+# eExchange (Exchange8 Trading App) - Detailed Design Document
 
 > Wire-level design for the Exchange8 Flutter app `apps/eexchange`.
 > Overview: `README.md`. Business functionality: `BUSINESS.md`.

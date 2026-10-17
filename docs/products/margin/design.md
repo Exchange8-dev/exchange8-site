@@ -5,7 +5,7 @@ mdx:
   format: md
 custom_edit_url: https://github.com/Exchange8-dev/exchange8-margin/edit/main/DESIGN.md
 ---
-# DESIGN.md: Exchange8:Margin - Detailed Design Document
+# Exchange8:Margin - Detailed Design Document
 
 ## 1. Scope & Context
 

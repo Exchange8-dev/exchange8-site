@@ -5,7 +5,7 @@ mdx:
   format: md
 custom_edit_url: https://github.com/Exchange8-dev/exchange8-sor/edit/main/DESIGN.md
 ---
-# DESIGN.md: Exchange8:SOR - Detailed Design Document
+# Exchange8:SOR - Detailed Design Document
 
 ## 1. Scope & Context
 

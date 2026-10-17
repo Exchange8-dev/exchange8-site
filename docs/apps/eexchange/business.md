@@ -5,7 +5,7 @@ mdx:
   format: md
 custom_edit_url: https://github.com/Exchange8-dev/exchange8-eexchange/edit/main/BUSINESS.md
 ---
-# BUSINESS.md: eExchange - Business Requirements & Functionality
+# eExchange - Business Requirements & Functionality
 
 > Audience: product owners, business analysts, and anyone evaluating what
 > eExchange **does for the business**. For architecture read `README.md`;

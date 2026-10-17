@@ -5,7 +5,7 @@ mdx:
   format: md
 custom_edit_url: https://github.com/Exchange8-dev/exchange8-md/edit/main/DESIGN.md
 ---
-# DESIGN.md: Exchange8:MD - Detailed Design Document
+# Exchange8:MD - Detailed Design Document
 
 ## 1. Scope & Context
 

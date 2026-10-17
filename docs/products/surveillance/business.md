@@ -5,7 +5,7 @@ mdx:
   format: md
 custom_edit_url: https://github.com/Exchange8-dev/exchange8-surveillance/edit/main/BUSINESS.md
 ---
-# BUSINESS.md: Exchange8:Surveillance - Business Requirements & Functionality
+# Exchange8:Surveillance - Business Requirements & Functionality
 
 > Audience: product owners, business analysts, and anyone evaluating what
 > Exchange8:Surveillance **does for the business**. For architecture read

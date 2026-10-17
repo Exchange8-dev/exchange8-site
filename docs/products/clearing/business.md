@@ -5,7 +5,7 @@ mdx:
   format: md
 custom_edit_url: https://github.com/Exchange8-dev/exchange8-clearing/edit/main/BUSINESS.md
 ---
-# BUSINESS.md: Exchange8:Clearing - Business Requirements & Functionality
+# Exchange8:Clearing - Business Requirements & Functionality
 
 > Audience: product owners, business analysts, and anyone evaluating what
 > Exchange8:Clearing **does for the business**. For architecture read `README.md`;

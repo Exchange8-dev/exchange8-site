@@ -5,7 +5,7 @@ mdx:
   format: md
 custom_edit_url: https://github.com/Exchange8-dev/exchange8-risk/edit/main/BUSINESS.md
 ---
-# BUSINESS.md: Exchange8:Risk - Business Requirements & Functionality
+# Exchange8:Risk - Business Requirements & Functionality
 
 > Audience: product owners, business analysts, and anyone evaluating what
 > Exchange8:Risk **does for the business**. For architecture read `README.md`;

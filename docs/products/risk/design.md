@@ -5,7 +5,7 @@ mdx:
   format: md
 custom_edit_url: https://github.com/Exchange8-dev/exchange8-risk/edit/main/DESIGN.md
 ---
-# DESIGN.md: Exchange8:Risk - Detailed Design Document
+# Exchange8:Risk - Detailed Design Document
 
 ## 1. Scope & Context
 

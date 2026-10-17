@@ -5,7 +5,7 @@ mdx:
   format: md
 custom_edit_url: https://github.com/Exchange8-dev/exchange8-rfq/edit/main/DESIGN.md
 ---
-# DESIGN.md: Exchange8:RFQ - Detailed Design Document
+# Exchange8:RFQ - Detailed Design Document
 
 ## 1. Scope & Context
 

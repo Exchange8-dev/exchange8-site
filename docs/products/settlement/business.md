@@ -5,7 +5,7 @@ mdx:
   format: md
 custom_edit_url: https://github.com/Exchange8-dev/exchange8-settlement/edit/main/BUSINESS.md
 ---
-# BUSINESS.md: Exchange8:Settlement - Business Requirements & DVP settlement, custody, FX, crypto, options
+# Exchange8:Settlement - Business Requirements & DVP settlement, custody, FX, crypto, options
 
 > Audience: product owners, business analysts, and anyone evaluating what
 > Exchange8:Settlement **does for the business**. For architecture read `README.md`;

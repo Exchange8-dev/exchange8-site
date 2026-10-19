@@ -42,7 +42,7 @@ custom_edit_url: https://github.com/Exchange8-dev/exchange8-margin/edit/main/BUS
 | Margin calls | Margin-call events with requirement, shortfall, and the mark the decision ran against |
 | Liquidation | Close-plan engine: close quantity, close side, shortfall - closed through the market (Exchange8:ME), with a durable pending → submitted → filled/failed lifecycle |
 | Perpetual funding | Periodic funding between longs and shorts from the clamped premium index, with an applied-rate history for every posting |
-| Options Greeks | Closed-form (Black–Scholes–Merton) delta/gamma/vega/theta/rho for European options, cached per contract |
+| Options Greeks | Closed-form (Black-Scholes-Merton) delta/gamma/vega/theta/rho for European options, cached per contract |
 | American pricing | Cox-Ross-Rubinstein tree pricing/Greeks capturing the early-exercise premium |
 | Portfolio netting | Account-level Greeks: underlying legs (±qty) + option legs (qty × multiplier × per-unit Greek); delta-equivalent notional, gamma, vega risk limits |
 | Futures/option expiry | Settlement-price observation windows, cash P&L settlement, physical delivery obligations, idempotent settlement state machine (open → expiring → settled) |
@@ -103,7 +103,7 @@ custom_edit_url: https://github.com/Exchange8-dev/exchange8-margin/edit/main/BUS
 
 | Capability | Business rule |
 |---|---|
-| Closed-form Greeks | European options are priced and riskified with Black–Scholes–Merton (price, delta, gamma, vega, theta, rho) validated against textbook values and put–call parity |
+| Closed-form Greeks | European options are priced and riskified with Black-Scholes-Merton (price, delta, gamma, vega, theta, rho) validated against textbook values and put-call parity |
 | American pricing | Early-exercise-premium contracts price through the CRR tree with early exercise at every node; the tree converges to the closed form when exercise is worthless |
 | Portfolio netting | Risk is netted per account: underlying positions contribute full delta; option legs contribute qty × multiplier × per-unit Greeks - a hedged book is measured as one position |
 | Greeks-shaped limits | Options risk limits act on delta-equivalent notional (delta × underlying price), gamma exposure, and vega exposure - absolute values, so short books trip the same limits |
@@ -269,7 +269,7 @@ adjustments, Shield policy-set updates (hot reload).
 5. Funding applies the clamped premium in both directions (longs pay /
    shorts receive when positive), never exceeds the cap, and stores the
    applied rate for every posting.
-6. BSM Greeks match textbook values within tolerance; put–call parity and
+6. BSM Greeks match textbook values within tolerance; put-call parity and
    delta parity hold exactly; degenerate inputs are rejected; netting across
    underlying + option legs reproduces hand-computed portfolio values.
 7. American options price through the CRR tree with early exercise (put ≥

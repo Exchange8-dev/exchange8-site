@@ -171,7 +171,7 @@ graph TD
 sequenceDiagram
     autonumber
     participant GW as Exchange8:Gateway
-    participant AU as Auth verify + Shield (steps 1–5)
+    participant AU as Auth verify + Shield (steps 1-5)
     participant SC as StrategyCode parse
     participant EP as entry_phase / next_phase
     participant SV as select_venues + spray_leg
@@ -318,7 +318,7 @@ erDiagram
         uuid env_id FK
         text mic
         text exec_broker_id
-        text slice_id "market-slice key A–Z"
+        text slice_id "market-slice key A-Z"
         text sender_comp_id
         text target_comp_id
         text address
@@ -377,7 +377,7 @@ erDiagram
     sor_market_slice {
         uuid id PK
         uuid env_id FK
-        char_1 slice_id "A–Z"
+        char_1 slice_id "A-Z"
         text mic
         text symbol_begin
         text symbol_end
@@ -443,7 +443,7 @@ Per-table notes:
 - `sor.trade_venue_charge` - banded routing charge per MIC × market ×
   price band (`price_low`..`price_high`, `active`). The cheapest-first
   sort's input.
-- `sor.market_slice` - symbol-letter venue slices (`slice_id` A–Z,
+- `sor.market_slice` - symbol-letter venue slices (`slice_id` A-Z,
   `symbol_begin`..`symbol_end`), UNIQUE `(env_id, slice_id, mic)`.
 - `sor.outbox` - the local outbox (platform `sentin8_outbox` shape): rows
   inserted in the same transaction as the domain change (`event_type`,
@@ -774,7 +774,7 @@ Always-true conditions:
 5. The phase arc only advances (RADAR → SPRAY → SEQUENTIAL → POST;
    ledger terminals `Complete`/`Killed`); no backward transitions.
 6. Strategy codes are totally validated before routing: exactly 9
-   digits, all three option codes resolve, mode digit `0–3`, and mode 0
+   digits, all three option codes resolve, mode digit `0-3`, and mode 0
    carries an empty lit list - invalid codes leave no legs.
 7. Identical inputs (candidates, quantity) produce identical leg plans -
    the `(charge, venue)` stable sort is deterministic across runs.

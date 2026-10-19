@@ -462,7 +462,7 @@ the same decision.
 
 | Surface | Direction | Gate / credentials | Notes |
 |---|---|---|---|
-| FIX 4.2 logon | over TLS | `SessionKeyRegistry.verify` - UnknownCompId/BadKey → reject (`exchange8_logon_rejected`) | HeartBtInt clamped 10–120; `ResetSeqNumFlag 141=Y` restarts counters |
+| FIX 4.2 logon | over TLS | `SessionKeyRegistry.verify` - UnknownCompId/BadKey → reject (`exchange8_logon_rejected`) | HeartBtInt clamped 10-120; `ResetSeqNumFlag 141=Y` restarts counters |
 | FIX app messages | in-order stream | session established | NewOrderSingle / cancel / replace decoded to `ExchangeOrder`, then the submission pipeline |
 | FIX admin messages | in-order stream | session established | TestRequest→Heartbeat, ResendRequest served from store, SequenceReset-GapFill accepted forward |
 | OUCH enter/replace/cancel | over TLS | same session keys, `protocol='OUCH'` | codec → normalized order → same pipeline |
@@ -569,7 +569,7 @@ an audit `Execute` row and the admin surface mutations journal `Update` rows
 ## 5. Cross-Cutting Concerns
 
 **Authentication.** HTTP requests verify the Sentin8:Auth bearer token
-(8-step pipeline, steps 1–3 in the shell) - there is no per-handler JWT
+(8-step pipeline, steps 1-3 in the shell) - there is no per-handler JWT
 scope *check*; the scope claim is a pre-filter + RLS feed and Shield is
 the decision. FIX logon is verified out-of-band: `Username (553)` /
 `Password (554)` carry a *session key reference*, verified by a
@@ -594,7 +594,7 @@ counter stamping make duplicate session frames structurally impossible.
 **Rate limiting / bot protection.** Session protocol guards bound bad
 actors at the connection layer: logon required before anything else,
 pre-logon traffic disconnects, low-seq teardown, heartbeat read-timeout
-drain (interval clamped 10–120 s). FIX/OUCH clients are certified per
+drain (interval clamped 10-120 s). FIX/OUCH clients are certified per
 connection (`certification_status`).
 
 **Audit journaling.** Domain mutations write `gateway.audit_journal` rows

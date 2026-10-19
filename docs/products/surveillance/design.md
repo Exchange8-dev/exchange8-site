@@ -13,7 +13,7 @@ custom_edit_url: https://github.com/Exchange8-dev/exchange8-surveillance/edit/ma
 
 - Detection alerts (`surveillance.surveillance_alert`) - one row per
   detection: pattern (CHECK-constrained to the eight pattern keys),
-  instrument, account, confidence (0–100), evidence JSONB.
+  instrument, account, confidence (0-100), evidence JSONB.
 - Case management (`surveillance.surveillance_case`) - the compliance
   workflow per alert: `open / investigating / closed`, dismissal flag,
   assignee, open/close timestamps, FK to the alert.
@@ -285,7 +285,7 @@ Per-table notes:
 
 | Table | Visibility | Notes |
 |---|---|---|
-| `surveillance.surveillance_alert` | env-scoped, RLS FORCE | pattern ∈ {wash_trade, spoofing, layering, momentum_ignition, insider_trading, front_running, marking_the_close, excessive_crossing}; confidence CHECK 0–100; index `(env_id, pattern)` |
+| `surveillance.surveillance_alert` | env-scoped, RLS FORCE | pattern ∈ {wash_trade, spoofing, layering, momentum_ignition, insider_trading, front_running, marking_the_close, excessive_crossing}; confidence CHECK 0-100; index `(env_id, pattern)` |
 | `surveillance.surveillance_case` | env-scoped, RLS FORCE | FK to `surveillance_alert(id)`; state CHECK open/investigating/closed; index `(env_id, state)` for the queue view |
 | `surveillance.alert` | env-scoped, RLS FORCE | ops alert log; unacked = `admin_id IS NULL`; partial index `(env_id) WHERE admin_id IS NULL` |
 | `surveillance.outbox` | env-scoped, RLS FORCE | DBX §6.7 producer table; partial index on `relayed = false`; `pg_notify('surveillance_outbox_changed')` trigger |
@@ -549,7 +549,7 @@ Invariants (always true):
    buffer clears on fire, the wash counter counts past its threshold, and
    the close detector depends on per-instrument medians (missing/zero
    median ⇒ no alert, never division by a degenerate basis).
-5. Confidence is always within 0–100 (DB CHECK mirrors the core's
+5. Confidence is always within 0-100 (DB CHECK mirrors the core's
    computation).
 6. Tenant context and data statements always run on the same connection;
    `sentin8_set_tenant_context` is awaited.

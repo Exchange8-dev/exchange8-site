@@ -877,7 +877,7 @@ graph TD
   buy`), shortfall, and `flat account never liquidates`; funding
   pays-longs-when-premium-positive and clamp-to-cap; initial ≥ maintenance
   requirement ordering. Greeks: textbook ATM BSM values (price/delta/gamma/
-  vega/theta/rho), put–call parity `C − P = S − K e^{−rT}` and `Δc − Δp = 1`
+  vega/theta/rho), put-call parity `C − P = S − K e^{−rT}` and `Δc − Δp = 1`
   exactly, deep-ITM delta boundaries, degenerate-input rejection,
   N(0)/symmetry/N(1.96)/tails, portfolio netting (underlying + short call),
   limit checks (delta-notional/gamma/vega, absolute values for shorts),

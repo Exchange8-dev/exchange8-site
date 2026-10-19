@@ -657,7 +657,7 @@ in the surface.
 
 ### 5.1 Authentication & token verification
 
-Step 1–2 of the pipeline: `verify_token` → `sentin8_auth_client::
+Step 1-2 of the pipeline: `verify_token` → `sentin8_auth_client::
 verify_bearer_token` against Sentin8:Auth (issuer config, JWKS cached behind
 the shared client). M2M and user tokens verify identically; `token_tp` never
 bypasses Shield (guarded by the policy wiring tests). The PQ crypto provider
@@ -907,7 +907,7 @@ graph TD
   (`crossref.rs` tests), RFW page shape (hex icons, POST-friendly action
   resources, page coverage), handler scope matrix
   (deny empty/foreign/sibling, allow exact/unioned/platform-admin,
-  prefix-permissive grants vs exact denials, naming convention, guard–scope
+  prefix-permissive grants vs exact denials, naming convention, guard-scope
   parity).
 - **Handler oneshot** (`tests/handlers_oneshot.rs`): drives the real router
   through `tower::oneshot` with a never-connected pool - route mounting,

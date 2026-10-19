@@ -126,7 +126,7 @@ graph TD
     end
     subgraph DecisionX["Decision plane"]
         PC["RiskCache.snapshot() → Arc EnvState"]
-        MAT["core.rs authorize(): checks 1–21, first-fail reject"]
+        MAT["core.rs authorize(): checks 1-21, first-fail reject"]
         RL["LimitsLedger.reserve(): permit → matrix → open-order slot → notional reservation"]
         TB["guards.rs TokenBucket + ReservationLedger counters"]
     end
@@ -153,9 +153,9 @@ graph TD
 sequenceDiagram
     autonumber
     participant GW as Exchange8:Gateway
-    participant AU as Auth verify + Shield (step 1–5)
+    participant AU as Auth verify + Shield (step 1-5)
     participant RC as RiskCache (ArcSwap snapshot)
-    participant MAT as core.rs authorize (checks 1–21)
+    participant MAT as core.rs authorize (checks 1-21)
     participant LG as LimitsLedger + TokenBucket
     participant OUT as Egress (MemBus / outbox / audit)
 
@@ -170,7 +170,7 @@ sequenceDiagram
         alt RateLimited
             LG-->>GW: reject (RateLimited)
         else permit ok
-            MAT->>MAT: static checks 1–21 (fail-closed, first-fail reject code)
+            MAT->>MAT: static checks 1-21 (fail-closed, first-fail reject code)
             alt static reject
                 MAT-->>GW: AuthorizeResponse { decision: Reject, code }
                 Note over LG: no ledger movement on static reject
@@ -472,7 +472,7 @@ flowchart TD
     SNAP -->|stale beyond watermark| RST["reject - fail-closed (stale cache is exposure)"]
     SNAP -->|ok| PER{"rate permit"}
     PER -->|none| RRL["Reject RateLimited"]
-    PER -->|ok| MAT{"checks 1–21"}
+    PER -->|ok| MAT{"checks 1-21"}
     MAT -->|first failure| RCO["Reject exact catalog code"]
     MAT -->|pass| BUC{"buckets: open-orders slot + notional headroom"}
     BUC -->|exceeded| RLX["Reject (OpenOrdersExceeded / NotionalExceeded)"]
@@ -605,7 +605,7 @@ type system.
 
 ```mermaid
 graph TD
-    U["Unit tests - core.rs matrix (checks 1–21, per-check reject), guards.rs buckets, limits.rs ledger/cache"]
+    U["Unit tests - core.rs matrix (checks 1-21, per-check reject), guards.rs buckets, limits.rs ledger/cache"]
     P["Policy wiring tests - tests/policy.rs (pure, no DB)"]
     S["SQL integration (RLS matrix) - tests/sql_matrix.rs (live DB, exchange8_probe NOBYPASSRLS role)"]
     G["Workspace suites - shell wiring, vertical enroll, wire/event parity"]
@@ -662,7 +662,7 @@ graph TD
 - Rate-guard configuration defaults per connection class (capacity and
   sustained rate are the mechanism's inputs; venue-wide defaults are a
   business configuration decision).
-- The replace-validation mount (cancel/replace inheriting checks 1–4 plus
+- The replace-validation mount (cancel/replace inheriting checks 1-4 plus
   re-price/re-notional) at the same authorize surface.
 - Synchronous pre-trade options checks consulting the Exchange8:Margin margin
   requirement (derivatives extension: the cross-service hook and caching

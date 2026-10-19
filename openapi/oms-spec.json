@@ -15,7 +15,7 @@
         "tags": [
           "exchange8-admin"
         ],
-        "summary": "`POST /v1/admin/algo-orders` — the durable algo parents (RFW page data;\nRLS-scoped read of `oms.algo_order` with explicit `env_id`). Gate: the\n`algos` read scope.",
+        "summary": "`POST /v1/admin/algo-orders`",
         "operationId": "admin_algo_orders",
         "responses": {
           "200": {
@@ -33,7 +33,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "the durable algo parents (RFW page data;\nRLS-scoped read of `oms.algo_order` with explicit `env_id`). Gate: the\n`algos` read scope."
       }
     },
     "/v1/admin/algo-orders/{id}/pause": {
@@ -41,7 +42,7 @@
         "tags": [
           "exchange8-admin"
         ],
-        "summary": "`POST /v1/admin/algo-orders/{id}/pause` — pause the running parent\n(`running → paused`; the durable binding + transition event + audit).",
+        "summary": "`POST /v1/admin/algo-orders/{id}/pause`",
         "operationId": "pause_algo_order",
         "responses": {
           "200": {
@@ -59,7 +60,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "pause the running parent\n(`running → paused`; the durable binding + transition event + audit)."
       }
     },
     "/v1/admin/algo-orders/{id}/resume": {
@@ -67,7 +69,7 @@
         "tags": [
           "exchange8-admin"
         ],
-        "summary": "`POST /v1/admin/algo-orders/{id}/resume` — resume the paused parent\n(`paused → running`).",
+        "summary": "`POST /v1/admin/algo-orders/{id}/resume`",
         "operationId": "resume_algo_order",
         "responses": {
           "200": {
@@ -85,7 +87,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "resume the paused parent\n(`paused → running`)."
       }
     },
     "/v1/admin/attributes": {
@@ -114,7 +117,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/attributes`"
       },
       "put": {
         "tags": [
@@ -149,7 +153,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`PUT /v1/admin/attributes`"
       },
       "delete": {
         "tags": [
@@ -179,7 +184,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`DELETE /v1/admin/attributes`"
       }
     },
     "/v1/admin/attributes/{id}/delete": {
@@ -211,7 +217,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/attributes/{id}/delete`"
       }
     },
     "/v1/admin/conditionals": {
@@ -219,7 +226,7 @@
         "tags": [
           "exchange8-admin"
         ],
-        "summary": "`POST /v1/admin/conditionals` — the held conditional table (RFW page\ndata; read-only). Gate: the `conditionals` page's read scope.",
+        "summary": "`POST /v1/admin/conditionals`",
         "operationId": "admin_conditionals",
         "responses": {
           "200": {
@@ -237,7 +244,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "the held conditional table (RFW page\ndata; read-only). Gate: the `conditionals` page's read scope."
       }
     },
     "/v1/admin/pegs": {
@@ -245,7 +253,7 @@
         "tags": [
           "exchange8-admin"
         ],
-        "summary": "`POST /v1/admin/pegs` — the live peg table (RFW page data; read-only).\nGate: the `pegs` page's read scope.",
+        "summary": "`POST /v1/admin/pegs`",
         "operationId": "admin_pegs",
         "responses": {
           "200": {
@@ -263,7 +271,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "the live peg table (RFW page data; read-only).\nGate: the `pegs` page's read scope."
       }
     },
     "/v1/admin/policy-decisions": {
@@ -292,7 +301,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/policy-decisions`"
       }
     },
     "/v1/admin/policy-sets": {
@@ -321,7 +331,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/policy-sets`"
       },
       "post": {
         "tags": [
@@ -356,7 +367,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets`"
       }
     },
     "/v1/admin/policy-sets/disable": {
@@ -385,7 +397,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets/disable`"
       }
     },
     "/v1/admin/policy-sets/enforce": {
@@ -414,7 +427,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets/enforce`"
       }
     },
     "/v1/admin/policy-sets/shadow": {
@@ -443,7 +457,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets/shadow`"
       }
     },
     "/v1/admin/policy-sets/{name}": {
@@ -483,7 +498,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/policy-sets/{name}`"
       },
       "put": {
         "tags": [
@@ -529,7 +545,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`PUT /v1/admin/policy-sets/{name}`"
       },
       "delete": {
         "tags": [
@@ -559,7 +576,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`DELETE /v1/admin/policy-sets/{name}`"
       }
     },
     "/v1/admin/policy-sets/{name}/save": {
@@ -604,7 +622,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets/{name}/save`"
       }
     },
     "/v1/admin/policy-sets/{name}/test": {
@@ -649,7 +668,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets/{name}/test`"
       }
     },
     "/v1/admin/policy-sets/{name}/{action}": {
@@ -698,7 +718,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets/{name}/{action}`"
       }
     },
     "/v1/admin/relations": {
@@ -727,7 +748,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/relations`"
       },
       "put": {
         "tags": [
@@ -762,7 +784,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`PUT /v1/admin/relations`"
       },
       "delete": {
         "tags": [
@@ -792,7 +815,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`DELETE /v1/admin/relations`"
       }
     },
     "/v1/admin/relations/check": {
@@ -847,7 +871,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/relations/check`"
       }
     },
     "/v1/admin/relations/{id}/delete": {
@@ -879,7 +904,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/relations/{id}/delete`"
       }
     },
     "/v1/admin/ui/{page}": {
@@ -887,7 +913,7 @@
         "tags": [
           "exchange8-admin"
         ],
-        "summary": "`GET /v1/admin/ui/{page}` — the declared RFW page definition (Dash\nrenders it; gated by the page's Shield action; 404 for undeclared\nslugs) — the refdata `handlers::admin_ui_page` pattern.",
+        "summary": "`GET /v1/admin/ui/{page}`",
         "operationId": "admin_ui_page",
         "responses": {
           "200": {
@@ -905,7 +931,8 @@
             "description": "Unknown page"
           }
         },
-        "security": []
+        "security": [],
+        "description": "the declared RFW page definition (Dash\nrenders it; gated by the page's Shield action; 404 for undeclared\nslugs) - the refdata `handlers::admin_ui_page` pattern."
       }
     },
     "/v1/health": {
@@ -913,7 +940,7 @@
         "tags": [
           "oms"
         ],
-        "summary": "Spec wrapper for the shell-owned `/v1/health` mount.",
+        "summary": "`GET /v1/health`",
         "operationId": "oms_health",
         "responses": {
           "200": {
@@ -925,7 +952,8 @@
             }
           }
         },
-        "security": []
+        "security": [],
+        "description": "Spec wrapper for the shell-owned `/v1/health` mount."
       }
     }
   },

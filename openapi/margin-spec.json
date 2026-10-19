@@ -36,7 +36,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/attributes`"
       },
       "put": {
         "tags": [
@@ -71,7 +72,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`PUT /v1/admin/attributes`"
       },
       "delete": {
         "tags": [
@@ -101,7 +103,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`DELETE /v1/admin/attributes`"
       }
     },
     "/v1/admin/attributes/{id}/delete": {
@@ -133,7 +136,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/attributes/{id}/delete`"
       }
     },
     "/v1/admin/liquidations": {
@@ -141,7 +145,7 @@
         "tags": [
           "exchange8-admin"
         ],
-        "summary": "Spec wrapper for the alias route (same handler as the public path).",
+        "summary": "`GET /v1/admin/liquidations`",
         "operationId": "admin_list_liquidations",
         "responses": {
           "200": {
@@ -156,7 +160,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "Spec wrapper for the alias route (same handler as the public path)."
       }
     },
     "/v1/admin/margin-accounts": {
@@ -164,7 +169,7 @@
         "tags": [
           "exchange8-admin"
         ],
-        "summary": "Spec wrapper for the alias route (same handler as the public path).",
+        "summary": "`GET /v1/admin/margin-accounts`",
         "operationId": "admin_list_margin_accounts",
         "responses": {
           "200": {
@@ -179,7 +184,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "Spec wrapper for the alias route (same handler as the public path)."
       }
     },
     "/v1/admin/policy-decisions": {
@@ -208,7 +214,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/policy-decisions`"
       }
     },
     "/v1/admin/policy-sets": {
@@ -237,7 +244,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/policy-sets`"
       },
       "post": {
         "tags": [
@@ -272,7 +280,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets`"
       }
     },
     "/v1/admin/policy-sets/disable": {
@@ -301,7 +310,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets/disable`"
       }
     },
     "/v1/admin/policy-sets/enforce": {
@@ -330,7 +340,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets/enforce`"
       }
     },
     "/v1/admin/policy-sets/shadow": {
@@ -359,7 +370,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets/shadow`"
       }
     },
     "/v1/admin/policy-sets/{name}": {
@@ -399,7 +411,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/policy-sets/{name}`"
       },
       "put": {
         "tags": [
@@ -445,7 +458,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`PUT /v1/admin/policy-sets/{name}`"
       },
       "delete": {
         "tags": [
@@ -475,7 +489,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`DELETE /v1/admin/policy-sets/{name}`"
       }
     },
     "/v1/admin/policy-sets/{name}/save": {
@@ -520,7 +535,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets/{name}/save`"
       }
     },
     "/v1/admin/policy-sets/{name}/test": {
@@ -565,7 +581,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets/{name}/test`"
       }
     },
     "/v1/admin/policy-sets/{name}/{action}": {
@@ -614,7 +631,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets/{name}/{action}`"
       }
     },
     "/v1/admin/positions": {
@@ -622,7 +640,7 @@
         "tags": [
           "exchange8-admin"
         ],
-        "summary": "Spec wrapper for the alias route (same handler as the public path).",
+        "summary": "`GET /v1/admin/positions`",
         "operationId": "admin_list_positions",
         "responses": {
           "200": {
@@ -637,7 +655,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "Spec wrapper for the alias route (same handler as the public path)."
       }
     },
     "/v1/admin/relations": {
@@ -666,7 +685,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/relations`"
       },
       "put": {
         "tags": [
@@ -701,7 +721,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`PUT /v1/admin/relations`"
       },
       "delete": {
         "tags": [
@@ -731,7 +752,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`DELETE /v1/admin/relations`"
       }
     },
     "/v1/admin/relations/check": {
@@ -786,7 +808,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/relations/check`"
       }
     },
     "/v1/admin/relations/{id}/delete": {
@@ -818,7 +841,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/relations/{id}/delete`"
       }
     },
     "/v1/health": {
@@ -826,7 +850,7 @@
         "tags": [
           "margin"
         ],
-        "summary": "Spec wrapper for the shell-owned `/v1/health` mount.",
+        "summary": "`GET /v1/health`",
         "operationId": "margin_health",
         "responses": {
           "200": {
@@ -838,7 +862,8 @@
             }
           }
         },
-        "security": []
+        "security": [],
+        "description": "Spec wrapper for the shell-owned `/v1/health` mount."
       }
     },
     "/v1/liquidations": {
@@ -846,7 +871,7 @@
         "tags": [
           "margin"
         ],
-        "summary": "`GET /v1/liquidations` — liquidation events.",
+        "summary": "`GET /v1/liquidations`",
         "operationId": "list_liquidations",
         "responses": {
           "200": {
@@ -864,7 +889,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "liquidation events."
       }
     },
     "/v1/margin-accounts": {
@@ -872,7 +898,7 @@
         "tags": [
           "margin"
         ],
-        "summary": "`GET /v1/margin-accounts` — margin balances + maintenance levels.",
+        "summary": "`GET /v1/margin-accounts`",
         "operationId": "list_margin_accounts",
         "responses": {
           "200": {
@@ -890,7 +916,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "margin balances + maintenance levels."
       }
     },
     "/v1/positions": {
@@ -898,7 +925,7 @@
         "tags": [
           "margin"
         ],
-        "summary": "`GET /v1/positions` — net positions per (account, contract).",
+        "summary": "`GET /v1/positions`",
         "operationId": "list_positions",
         "responses": {
           "200": {
@@ -916,7 +943,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "net positions per (account, contract)."
       }
     }
   },

@@ -36,7 +36,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/attributes`"
       },
       "put": {
         "tags": [
@@ -71,7 +72,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`PUT /v1/admin/attributes`"
       },
       "delete": {
         "tags": [
@@ -101,7 +103,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`DELETE /v1/admin/attributes`"
       }
     },
     "/v1/admin/auctions": {
@@ -109,7 +112,7 @@
         "tags": [
           "exchange8-admin"
         ],
-        "summary": "`POST /v1/admin/auctions` — the durable auction sessions (RFW table\ndata; RLS-scoped read of `me.auction`).",
+        "summary": "`POST /v1/admin/auctions`",
         "operationId": "auctions_snapshot",
         "responses": {
           "200": {
@@ -127,7 +130,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "the durable auction sessions (RFW table\ndata; RLS-scoped read of `me.auction`)."
       }
     },
     "/v1/admin/policy-sets": {
@@ -156,7 +160,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/policy-sets`"
       }
     },
     "/v1/admin/policy-sets/disable": {
@@ -185,7 +190,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets/disable`"
       }
     },
     "/v1/admin/policy-sets/enforce": {
@@ -214,7 +220,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets/enforce`"
       }
     },
     "/v1/admin/policy-sets/shadow": {
@@ -243,7 +250,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets/shadow`"
       }
     },
     "/v1/admin/policy-sets/{name}": {
@@ -283,7 +291,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/policy-sets/{name}`"
       },
       "put": {
         "tags": [
@@ -329,7 +338,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`PUT /v1/admin/policy-sets/{name}`"
       },
       "delete": {
         "tags": [
@@ -359,7 +369,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`DELETE /v1/admin/policy-sets/{name}`"
       }
     },
     "/v1/admin/policy-sets/{name}/test": {
@@ -404,7 +415,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets/{name}/test`"
       }
     },
     "/v1/admin/relations": {
@@ -433,7 +445,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/relations`"
       },
       "put": {
         "tags": [
@@ -468,7 +481,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`PUT /v1/admin/relations`"
       },
       "delete": {
         "tags": [
@@ -498,7 +512,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`DELETE /v1/admin/relations`"
       }
     },
     "/v1/admin/relations/check": {
@@ -553,7 +568,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/relations/check`"
       }
     },
     "/v1/admin/ui/auctions": {
@@ -561,7 +577,7 @@
         "tags": [
           "exchange8-admin"
         ],
-        "summary": "`GET /v1/admin/ui/auctions` — the auctions RFW page definition.",
+        "summary": "`GET /v1/admin/ui/auctions`",
         "operationId": "admin_ui_auctions_page",
         "responses": {
           "200": {
@@ -579,7 +595,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "the auctions RFW page definition."
       }
     },
     "/v1/admin/ui/engine": {
@@ -587,7 +604,7 @@
         "tags": [
           "exchange8-admin"
         ],
-        "summary": "`GET /v1/admin/ui/engine` — the RFW page definition (Dash renders it).\nGate: the page's declared scope (the `exchange8:order:read` admin\nvocabulary; the step-5 mirror admits the platform-admin trio).",
+        "summary": "`GET /v1/admin/ui/engine`",
         "operationId": "admin_ui_engine_page",
         "responses": {
           "200": {
@@ -605,7 +622,8 @@
             "description": "Forbidden"
           }
         },
-        "security": []
+        "security": [],
+        "description": "the RFW page definition (Dash renders it).\nGate: the page's declared scope (the `exchange8:order:read` admin\nvocabulary; the step-5 mirror admits the platform-admin trio)."
       }
     },
     "/v1/health": {
@@ -613,7 +631,7 @@
         "tags": [
           "me"
         ],
-        "summary": "Spec wrapper for the shell-owned `/v1/health` mount.",
+        "summary": "`GET /v1/health`",
         "operationId": "me_health",
         "responses": {
           "200": {
@@ -625,7 +643,8 @@
             }
           }
         },
-        "security": []
+        "security": [],
+        "description": "Spec wrapper for the shell-owned `/v1/health` mount."
       }
     }
   },

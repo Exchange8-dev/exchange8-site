@@ -37,6 +37,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy list attributes.",
         "summary": "`GET /v1/admin/attributes`"
       },
       "put": {
@@ -73,6 +74,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy put attribute.",
         "summary": "`PUT /v1/admin/attributes`"
       },
       "delete": {
@@ -104,6 +106,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy delete attribute.",
         "summary": "`DELETE /v1/admin/attributes`"
       }
     },
@@ -137,6 +140,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy delete attribute path.",
         "summary": "`POST /v1/admin/attributes/{id}/delete`"
       }
     },
@@ -161,7 +165,7 @@
           }
         },
         "security": [],
-        "description": "Spec wrapper for the alias route (same handler as the public path)."
+        "description": "Admin list orders.\n\nSpec wrapper for the alias route (same handler as the public path)."
       }
     },
     "/v1/admin/policy-decisions": {
@@ -191,6 +195,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy list decisions.",
         "summary": "`GET /v1/admin/policy-decisions`"
       }
     },
@@ -221,6 +226,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy list sets.",
         "summary": "`GET /v1/admin/policy-sets`"
       },
       "post": {
@@ -257,6 +263,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy create set.",
         "summary": "`POST /v1/admin/policy-sets`"
       }
     },
@@ -287,6 +294,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy mode disable.",
         "summary": "`POST /v1/admin/policy-sets/disable`"
       }
     },
@@ -317,6 +325,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy mode enforce.",
         "summary": "`POST /v1/admin/policy-sets/enforce`"
       }
     },
@@ -347,6 +356,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy mode shadow.",
         "summary": "`POST /v1/admin/policy-sets/shadow`"
       }
     },
@@ -388,6 +398,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy get set.",
         "summary": "`GET /v1/admin/policy-sets/{name}`"
       },
       "put": {
@@ -435,6 +446,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy put set.",
         "summary": "`PUT /v1/admin/policy-sets/{name}`"
       },
       "delete": {
@@ -466,6 +478,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy delete set.",
         "summary": "`DELETE /v1/admin/policy-sets/{name}`"
       }
     },
@@ -512,6 +525,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy save set.",
         "summary": "`POST /v1/admin/policy-sets/{name}/save`"
       }
     },
@@ -558,6 +572,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy test set.",
         "summary": "`POST /v1/admin/policy-sets/{name}/test`"
       }
     },
@@ -608,6 +623,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy flip set.",
         "summary": "`POST /v1/admin/policy-sets/{name}/{action}`"
       }
     },
@@ -638,6 +654,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy list relations.",
         "summary": "`GET /v1/admin/relations`"
       },
       "put": {
@@ -674,6 +691,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy put relation.",
         "summary": "`PUT /v1/admin/relations`"
       },
       "delete": {
@@ -705,6 +723,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy delete relation.",
         "summary": "`DELETE /v1/admin/relations`"
       }
     },
@@ -761,6 +780,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy check relation.",
         "summary": "`GET /v1/admin/relations/check`"
       }
     },
@@ -794,6 +814,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy delete relation path.",
         "summary": "`POST /v1/admin/relations/{id}/delete`"
       }
     },
@@ -818,7 +839,7 @@
           }
         },
         "security": [],
-        "description": "Spec wrapper for the alias route (same handler as the public path)."
+        "description": "Admin list trades.\n\nSpec wrapper for the alias route (same handler as the public path)."
       }
     },
     "/v1/health": {
@@ -839,7 +860,7 @@
           }
         },
         "security": [],
-        "description": "Spec wrapper for the shell-owned `/v1/health` mount."
+        "description": "Clearing health.\n\nSpec wrapper for the shell-owned `/v1/health` mount."
       }
     },
     "/v1/orders": {
@@ -866,7 +887,7 @@
           }
         },
         "security": [],
-        "description": "the order day log (FIX_ORDER)."
+        "description": "List orders.\n\nthe order day log (FIX_ORDER)."
       }
     },
     "/v1/trades": {
@@ -893,7 +914,7 @@
           }
         },
         "security": [],
-        "description": "list executions (RLS-scoped). Both per-side rows of a\ntrade carry the same `trade_id` (one-row-per-side shape)."
+        "description": "List trades.\n\nlist executions (RLS-scoped). Both per-side rows of a\ntrade carry the same `trade_id` (one-row-per-side shape)."
       }
     },
     "/v1/trades/bust": {

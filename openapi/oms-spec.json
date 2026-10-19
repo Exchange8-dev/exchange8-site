@@ -34,7 +34,7 @@
           }
         },
         "security": [],
-        "description": "the durable algo parents (RFW page data;\nRLS-scoped read of `oms.algo_order` with explicit `env_id`). Gate: the\n`algos` read scope."
+        "description": "Admin algo orders.\n\nthe durable algo parents (RFW page data;\nRLS-scoped read of `oms.algo_order` with explicit `env_id`). Gate: the\n`algos` read scope."
       }
     },
     "/v1/admin/algo-orders/{id}/pause": {
@@ -61,7 +61,7 @@
           }
         },
         "security": [],
-        "description": "pause the running parent\n(`running → paused`; the durable binding + transition event + audit)."
+        "description": "Pause algo order.\n\npause the running parent\n(`running → paused`; the durable binding + transition event + audit)."
       }
     },
     "/v1/admin/algo-orders/{id}/resume": {
@@ -88,7 +88,7 @@
           }
         },
         "security": [],
-        "description": "resume the paused parent\n(`paused → running`)."
+        "description": "Resume algo order.\n\nresume the paused parent\n(`paused → running`)."
       }
     },
     "/v1/admin/attributes": {
@@ -118,6 +118,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy list attributes.",
         "summary": "`GET /v1/admin/attributes`"
       },
       "put": {
@@ -154,6 +155,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy put attribute.",
         "summary": "`PUT /v1/admin/attributes`"
       },
       "delete": {
@@ -185,6 +187,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy delete attribute.",
         "summary": "`DELETE /v1/admin/attributes`"
       }
     },
@@ -218,6 +221,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy delete attribute path.",
         "summary": "`POST /v1/admin/attributes/{id}/delete`"
       }
     },
@@ -245,7 +249,7 @@
           }
         },
         "security": [],
-        "description": "the held conditional table (RFW page\ndata; read-only). Gate: the `conditionals` page's read scope."
+        "description": "Admin conditionals.\n\nthe held conditional table (RFW page\ndata; read-only). Gate: the `conditionals` page's read scope."
       }
     },
     "/v1/admin/pegs": {
@@ -272,7 +276,7 @@
           }
         },
         "security": [],
-        "description": "the live peg table (RFW page data; read-only).\nGate: the `pegs` page's read scope."
+        "description": "Admin pegs.\n\nthe live peg table (RFW page data; read-only).\nGate: the `pegs` page's read scope."
       }
     },
     "/v1/admin/policy-decisions": {
@@ -302,6 +306,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy list decisions.",
         "summary": "`GET /v1/admin/policy-decisions`"
       }
     },
@@ -332,6 +337,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy list sets.",
         "summary": "`GET /v1/admin/policy-sets`"
       },
       "post": {
@@ -368,6 +374,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy create set.",
         "summary": "`POST /v1/admin/policy-sets`"
       }
     },
@@ -398,6 +405,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy mode disable.",
         "summary": "`POST /v1/admin/policy-sets/disable`"
       }
     },
@@ -428,6 +436,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy mode enforce.",
         "summary": "`POST /v1/admin/policy-sets/enforce`"
       }
     },
@@ -458,6 +467,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy mode shadow.",
         "summary": "`POST /v1/admin/policy-sets/shadow`"
       }
     },
@@ -499,6 +509,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy get set.",
         "summary": "`GET /v1/admin/policy-sets/{name}`"
       },
       "put": {
@@ -546,6 +557,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy put set.",
         "summary": "`PUT /v1/admin/policy-sets/{name}`"
       },
       "delete": {
@@ -577,6 +589,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy delete set.",
         "summary": "`DELETE /v1/admin/policy-sets/{name}`"
       }
     },
@@ -623,6 +636,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy save set.",
         "summary": "`POST /v1/admin/policy-sets/{name}/save`"
       }
     },
@@ -669,6 +683,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy test set.",
         "summary": "`POST /v1/admin/policy-sets/{name}/test`"
       }
     },
@@ -719,6 +734,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy flip set.",
         "summary": "`POST /v1/admin/policy-sets/{name}/{action}`"
       }
     },
@@ -749,6 +765,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy list relations.",
         "summary": "`GET /v1/admin/relations`"
       },
       "put": {
@@ -785,6 +802,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy put relation.",
         "summary": "`PUT /v1/admin/relations`"
       },
       "delete": {
@@ -816,6 +834,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy delete relation.",
         "summary": "`DELETE /v1/admin/relations`"
       }
     },
@@ -872,6 +891,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy check relation.",
         "summary": "`GET /v1/admin/relations/check`"
       }
     },
@@ -905,6 +925,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy delete relation path.",
         "summary": "`POST /v1/admin/relations/{id}/delete`"
       }
     },
@@ -932,7 +953,7 @@
           }
         },
         "security": [],
-        "description": "the declared RFW page definition (Dash\nrenders it; gated by the page's Shield action; 404 for undeclared\nslugs) - the refdata `handlers::admin_ui_page` pattern."
+        "description": "Admin ui page.\n\nthe declared RFW page definition (Dash\nrenders it; gated by the page's Shield action; 404 for undeclared\nslugs) - the refdata `handlers::admin_ui_page` pattern."
       }
     },
     "/v1/health": {
@@ -953,7 +974,7 @@
           }
         },
         "security": [],
-        "description": "Spec wrapper for the shell-owned `/v1/health` mount."
+        "description": "Oms health.\n\nSpec wrapper for the shell-owned `/v1/health` mount."
       }
     }
   },

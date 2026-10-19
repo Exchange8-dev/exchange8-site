@@ -37,6 +37,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy list attributes.",
         "summary": "`GET /v1/admin/attributes`"
       },
       "put": {
@@ -73,6 +74,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy put attribute.",
         "summary": "`PUT /v1/admin/attributes`"
       },
       "delete": {
@@ -104,6 +106,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy delete attribute.",
         "summary": "`DELETE /v1/admin/attributes`"
       }
     },
@@ -137,6 +140,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy delete attribute path.",
         "summary": "`POST /v1/admin/attributes/{id}/delete`"
       }
     },
@@ -161,7 +165,7 @@
           }
         },
         "security": [],
-        "description": "Spec wrapper for the alias route (same handler as the public path)."
+        "description": "Admin list connections.\n\nSpec wrapper for the alias route (same handler as the public path)."
       }
     },
     "/v1/admin/messages": {
@@ -188,7 +192,7 @@
           }
         },
         "security": [],
-        "description": "the resend-window store rows (the `messages`\npage data endpoint; retention-purged per DESIGN.md §6)."
+        "description": "List fix messages.\n\nthe resend-window store rows (the `messages`\npage data endpoint; retention-purged per DESIGN.md §6)."
       }
     },
     "/v1/admin/policy-decisions": {
@@ -218,6 +222,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy list decisions.",
         "summary": "`GET /v1/admin/policy-decisions`"
       }
     },
@@ -248,6 +253,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy list sets.",
         "summary": "`GET /v1/admin/policy-sets`"
       },
       "post": {
@@ -284,6 +290,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy create set.",
         "summary": "`POST /v1/admin/policy-sets`"
       }
     },
@@ -314,6 +321,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy mode disable.",
         "summary": "`POST /v1/admin/policy-sets/disable`"
       }
     },
@@ -344,6 +352,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy mode enforce.",
         "summary": "`POST /v1/admin/policy-sets/enforce`"
       }
     },
@@ -374,6 +383,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy mode shadow.",
         "summary": "`POST /v1/admin/policy-sets/shadow`"
       }
     },
@@ -415,6 +425,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy get set.",
         "summary": "`GET /v1/admin/policy-sets/{name}`"
       },
       "put": {
@@ -462,6 +473,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy put set.",
         "summary": "`PUT /v1/admin/policy-sets/{name}`"
       },
       "delete": {
@@ -493,6 +505,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy delete set.",
         "summary": "`DELETE /v1/admin/policy-sets/{name}`"
       }
     },
@@ -539,6 +552,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy save set.",
         "summary": "`POST /v1/admin/policy-sets/{name}/save`"
       }
     },
@@ -585,6 +599,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy test set.",
         "summary": "`POST /v1/admin/policy-sets/{name}/test`"
       }
     },
@@ -635,6 +650,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy flip set.",
         "summary": "`POST /v1/admin/policy-sets/{name}/{action}`"
       }
     },
@@ -665,6 +681,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy list relations.",
         "summary": "`GET /v1/admin/relations`"
       },
       "put": {
@@ -701,6 +718,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy put relation.",
         "summary": "`PUT /v1/admin/relations`"
       },
       "delete": {
@@ -732,6 +750,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy delete relation.",
         "summary": "`DELETE /v1/admin/relations`"
       }
     },
@@ -788,6 +807,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy check relation.",
         "summary": "`GET /v1/admin/relations/check`"
       }
     },
@@ -821,6 +841,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy delete relation path.",
         "summary": "`POST /v1/admin/relations/{id}/delete`"
       }
     },
@@ -845,7 +866,7 @@
           }
         },
         "security": [],
-        "description": "Spec wrapper for the alias route (same handler as the public path)."
+        "description": "Admin list sessions.\n\nSpec wrapper for the alias route (same handler as the public path)."
       },
       "post": {
         "tags": [
@@ -870,7 +891,7 @@
           }
         },
         "security": [],
-        "description": "/{id}/stop` - admin session stop (design §4.5\n`sessions` page action; the runtime registry delivers the logout)."
+        "description": "Stop session.\n\n{id}/stop` - admin session stop (design §4.5\n`sessions` page action; the runtime registry delivers the logout)."
       }
     },
     "/v1/admin/sessions/{id}/stop": {
@@ -894,7 +915,7 @@
           }
         },
         "security": [],
-        "description": "Spec wrapper for the alias route (same handler as the public path)."
+        "description": "Admin stop session post.\n\nSpec wrapper for the alias route (same handler as the public path)."
       }
     },
     "/v1/admin/ui/{page}": {
@@ -921,7 +942,7 @@
           }
         },
         "security": [],
-        "description": "the RFW page definition (Dash renders it;\ngated by the page's declared admin scope)."
+        "description": "Admin ui page.\n\nthe RFW page definition (Dash renders it;\ngated by the page's declared admin scope)."
       }
     },
     "/v1/connections": {
@@ -948,7 +969,7 @@
           }
         },
         "security": [],
-        "description": "list client sessions (RLS-scoped)."
+        "description": "List connections.\n\nlist client sessions (RLS-scoped)."
       }
     },
     "/v1/connections/{id}/seq": {
@@ -975,7 +996,7 @@
           }
         },
         "security": [],
-        "description": "persisted FIX sequence counters."
+        "description": "Get seq state.\n\npersisted FIX sequence counters."
       }
     },
     "/v1/connections/{id}/seq-reset": {
@@ -1002,7 +1023,7 @@
           }
         },
         "security": [],
-        "description": "admin sequence reset\n(the platform spec seq reset parity; design §6 admin ops)."
+        "description": "Seq reset.\n\nadmin sequence reset\n(the platform spec seq reset parity; design §6 admin ops)."
       }
     },
     "/v1/health": {
@@ -1023,7 +1044,7 @@
           }
         },
         "security": [],
-        "description": "Spec wrapper for the shell-owned `/v1/health` mount."
+        "description": "Gateway health.\n\nSpec wrapper for the shell-owned `/v1/health` mount."
       }
     },
     "/v1/internal/schedules/run": {
@@ -1049,6 +1070,7 @@
           }
         },
         "security": [],
+        "description": "Internal schedules run.",
         "summary": "`POST /v1/internal/schedules/run`"
       }
     },
@@ -1073,7 +1095,7 @@
           }
         },
         "security": [],
-        "description": "Spec wrapper for the alias route (same handler as the public path)."
+        "description": "Ws upgrade.\n\nSpec wrapper for the alias route (same handler as the public path)."
       }
     }
   },

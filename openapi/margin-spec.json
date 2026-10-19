@@ -37,6 +37,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy list attributes.",
         "summary": "`GET /v1/admin/attributes`"
       },
       "put": {
@@ -73,6 +74,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy put attribute.",
         "summary": "`PUT /v1/admin/attributes`"
       },
       "delete": {
@@ -104,6 +106,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy delete attribute.",
         "summary": "`DELETE /v1/admin/attributes`"
       }
     },
@@ -137,6 +140,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy delete attribute path.",
         "summary": "`POST /v1/admin/attributes/{id}/delete`"
       }
     },
@@ -161,7 +165,7 @@
           }
         },
         "security": [],
-        "description": "Spec wrapper for the alias route (same handler as the public path)."
+        "description": "Admin list liquidations.\n\nSpec wrapper for the alias route (same handler as the public path)."
       }
     },
     "/v1/admin/margin-accounts": {
@@ -185,7 +189,7 @@
           }
         },
         "security": [],
-        "description": "Spec wrapper for the alias route (same handler as the public path)."
+        "description": "Admin list margin accounts.\n\nSpec wrapper for the alias route (same handler as the public path)."
       }
     },
     "/v1/admin/policy-decisions": {
@@ -215,6 +219,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy list decisions.",
         "summary": "`GET /v1/admin/policy-decisions`"
       }
     },
@@ -245,6 +250,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy list sets.",
         "summary": "`GET /v1/admin/policy-sets`"
       },
       "post": {
@@ -281,6 +287,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy create set.",
         "summary": "`POST /v1/admin/policy-sets`"
       }
     },
@@ -311,6 +318,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy mode disable.",
         "summary": "`POST /v1/admin/policy-sets/disable`"
       }
     },
@@ -341,6 +349,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy mode enforce.",
         "summary": "`POST /v1/admin/policy-sets/enforce`"
       }
     },
@@ -371,6 +380,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy mode shadow.",
         "summary": "`POST /v1/admin/policy-sets/shadow`"
       }
     },
@@ -412,6 +422,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy get set.",
         "summary": "`GET /v1/admin/policy-sets/{name}`"
       },
       "put": {
@@ -459,6 +470,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy put set.",
         "summary": "`PUT /v1/admin/policy-sets/{name}`"
       },
       "delete": {
@@ -490,6 +502,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy delete set.",
         "summary": "`DELETE /v1/admin/policy-sets/{name}`"
       }
     },
@@ -536,6 +549,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy save set.",
         "summary": "`POST /v1/admin/policy-sets/{name}/save`"
       }
     },
@@ -582,6 +596,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy test set.",
         "summary": "`POST /v1/admin/policy-sets/{name}/test`"
       }
     },
@@ -632,6 +647,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy flip set.",
         "summary": "`POST /v1/admin/policy-sets/{name}/{action}`"
       }
     },
@@ -656,7 +672,7 @@
           }
         },
         "security": [],
-        "description": "Spec wrapper for the alias route (same handler as the public path)."
+        "description": "Admin list positions.\n\nSpec wrapper for the alias route (same handler as the public path)."
       }
     },
     "/v1/admin/relations": {
@@ -686,6 +702,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy list relations.",
         "summary": "`GET /v1/admin/relations`"
       },
       "put": {
@@ -722,6 +739,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy put relation.",
         "summary": "`PUT /v1/admin/relations`"
       },
       "delete": {
@@ -753,6 +771,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy delete relation.",
         "summary": "`DELETE /v1/admin/relations`"
       }
     },
@@ -809,6 +828,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy check relation.",
         "summary": "`GET /v1/admin/relations/check`"
       }
     },
@@ -842,6 +862,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy delete relation path.",
         "summary": "`POST /v1/admin/relations/{id}/delete`"
       }
     },
@@ -863,7 +884,7 @@
           }
         },
         "security": [],
-        "description": "Spec wrapper for the shell-owned `/v1/health` mount."
+        "description": "Margin health.\n\nSpec wrapper for the shell-owned `/v1/health` mount."
       }
     },
     "/v1/liquidations": {
@@ -890,7 +911,7 @@
           }
         },
         "security": [],
-        "description": "liquidation events."
+        "description": "List liquidations.\n\nliquidation events."
       }
     },
     "/v1/margin-accounts": {
@@ -917,7 +938,7 @@
           }
         },
         "security": [],
-        "description": "margin balances + maintenance levels."
+        "description": "List margin accounts.\n\nmargin balances + maintenance levels."
       }
     },
     "/v1/positions": {
@@ -944,7 +965,7 @@
           }
         },
         "security": [],
-        "description": "net positions per (account, contract)."
+        "description": "List positions.\n\nnet positions per (account, contract)."
       }
     }
   },

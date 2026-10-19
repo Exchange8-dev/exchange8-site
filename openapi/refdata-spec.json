@@ -37,6 +37,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy list attributes.",
         "summary": "`GET /v1/admin/attributes`"
       },
       "put": {
@@ -73,6 +74,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy put attribute.",
         "summary": "`PUT /v1/admin/attributes`"
       },
       "delete": {
@@ -104,6 +106,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy delete attribute.",
         "summary": "`DELETE /v1/admin/attributes`"
       }
     },
@@ -137,6 +140,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy delete attribute path.",
         "summary": "`POST /v1/admin/attributes/{id}/delete`"
       }
     },
@@ -161,7 +165,7 @@
           }
         },
         "security": [],
-        "description": "Spec wrapper for the `/v1/admin` alias route (same handler as the public path)."
+        "description": "Admin list corporate actions.\n\nSpec wrapper for the `/v1/admin` alias route (same handler as the public path)."
       },
       "post": {
         "tags": [
@@ -183,7 +187,7 @@
           }
         },
         "security": [],
-        "description": "Spec wrapper for the `/v1/admin` alias route (same handler as the public path)."
+        "description": "Admin announce corporate action.\n\nSpec wrapper for the `/v1/admin` alias route (same handler as the public path)."
       }
     },
     "/v1/admin/corporate-actions/calendar": {
@@ -207,7 +211,7 @@
           }
         },
         "security": [],
-        "description": "Spec wrapper for the `/v1/admin` alias route (same handler as the public path)."
+        "description": "Admin list ca calendar.\n\nSpec wrapper for the `/v1/admin` alias route (same handler as the public path)."
       }
     },
     "/v1/admin/corporate-actions/{id}/cancel": {
@@ -231,7 +235,7 @@
           }
         },
         "security": [],
-        "description": "Spec wrapper for the `/v1/admin` alias route (same handler as the public path)."
+        "description": "Admin cancel corporate action.\n\nSpec wrapper for the `/v1/admin` alias route (same handler as the public path)."
       }
     },
     "/v1/admin/markets": {
@@ -255,7 +259,7 @@
           }
         },
         "security": [],
-        "description": "Spec wrapper for the `/v1/admin` alias route (same handler as the public path)."
+        "description": "Admin list markets.\n\nSpec wrapper for the `/v1/admin` alias route (same handler as the public path)."
       },
       "post": {
         "tags": [
@@ -277,7 +281,7 @@
           }
         },
         "security": [],
-        "description": "Spec wrapper for the `/v1/admin` alias route (same handler as the public path)."
+        "description": "Admin create market.\n\nSpec wrapper for the `/v1/admin` alias route (same handler as the public path)."
       }
     },
     "/v1/admin/markets/{id}/update": {
@@ -301,7 +305,7 @@
           }
         },
         "security": [],
-        "description": "Spec wrapper for the `/v1/admin` alias route (same handler as the public path)."
+        "description": "Admin update market post.\n\nSpec wrapper for the `/v1/admin` alias route (same handler as the public path)."
       }
     },
     "/v1/admin/policy-decisions": {
@@ -331,6 +335,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy list decisions.",
         "summary": "`GET /v1/admin/policy-decisions`"
       }
     },
@@ -361,6 +366,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy list sets.",
         "summary": "`GET /v1/admin/policy-sets`"
       },
       "post": {
@@ -397,6 +403,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy create set.",
         "summary": "`POST /v1/admin/policy-sets`"
       }
     },
@@ -427,6 +434,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy mode disable.",
         "summary": "`POST /v1/admin/policy-sets/disable`"
       }
     },
@@ -457,6 +465,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy mode enforce.",
         "summary": "`POST /v1/admin/policy-sets/enforce`"
       }
     },
@@ -487,6 +496,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy mode shadow.",
         "summary": "`POST /v1/admin/policy-sets/shadow`"
       }
     },
@@ -528,6 +538,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy get set.",
         "summary": "`GET /v1/admin/policy-sets/{name}`"
       },
       "put": {
@@ -575,6 +586,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy put set.",
         "summary": "`PUT /v1/admin/policy-sets/{name}`"
       },
       "delete": {
@@ -606,6 +618,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy delete set.",
         "summary": "`DELETE /v1/admin/policy-sets/{name}`"
       }
     },
@@ -652,6 +665,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy save set.",
         "summary": "`POST /v1/admin/policy-sets/{name}/save`"
       }
     },
@@ -698,6 +712,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy test set.",
         "summary": "`POST /v1/admin/policy-sets/{name}/test`"
       }
     },
@@ -748,6 +763,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy flip set.",
         "summary": "`POST /v1/admin/policy-sets/{name}/{action}`"
       }
     },
@@ -778,6 +794,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy list relations.",
         "summary": "`GET /v1/admin/relations`"
       },
       "put": {
@@ -814,6 +831,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy put relation.",
         "summary": "`PUT /v1/admin/relations`"
       },
       "delete": {
@@ -845,6 +863,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy delete relation.",
         "summary": "`DELETE /v1/admin/relations`"
       }
     },
@@ -901,6 +920,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy check relation.",
         "summary": "`GET /v1/admin/relations/check`"
       }
     },
@@ -934,6 +954,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy delete relation path.",
         "summary": "`POST /v1/admin/relations/{id}/delete`"
       }
     },
@@ -958,7 +979,7 @@
           }
         },
         "security": [],
-        "description": "Spec wrapper for the `/v1/admin` alias route (same handler as the public path)."
+        "description": "Admin list securities.\n\nSpec wrapper for the `/v1/admin` alias route (same handler as the public path)."
       },
       "post": {
         "tags": [
@@ -980,7 +1001,7 @@
           }
         },
         "security": [],
-        "description": "Spec wrapper for the `/v1/admin` alias route (same handler as the public path)."
+        "description": "Admin create security.\n\nSpec wrapper for the `/v1/admin` alias route (same handler as the public path)."
       }
     },
     "/v1/admin/securities/{id}": {
@@ -1004,7 +1025,7 @@
           }
         },
         "security": [],
-        "description": "Spec wrapper for the `/v1/admin` alias route (same handler as the public path)."
+        "description": "Admin get security.\n\nSpec wrapper for the `/v1/admin` alias route (same handler as the public path)."
       },
       "put": {
         "tags": [
@@ -1026,7 +1047,7 @@
           }
         },
         "security": [],
-        "description": "Spec wrapper for the `/v1/admin` alias route (same handler as the public path)."
+        "description": "Admin update security.\n\nSpec wrapper for the `/v1/admin` alias route (same handler as the public path)."
       },
       "delete": {
         "tags": [
@@ -1048,7 +1069,7 @@
           }
         },
         "security": [],
-        "description": "Spec wrapper for the `/v1/admin` alias route (same handler as the public path)."
+        "description": "Admin delete security.\n\nSpec wrapper for the `/v1/admin` alias route (same handler as the public path)."
       }
     },
     "/v1/admin/securities/{id}/delete": {
@@ -1072,7 +1093,7 @@
           }
         },
         "security": [],
-        "description": "Spec wrapper for the `/v1/admin` alias route (same handler as the public path)."
+        "description": "Admin delete security post.\n\nSpec wrapper for the `/v1/admin` alias route (same handler as the public path)."
       }
     },
     "/v1/admin/securities/{id}/update": {
@@ -1096,7 +1117,7 @@
           }
         },
         "security": [],
-        "description": "Spec wrapper for the `/v1/admin` alias route (same handler as the public path)."
+        "description": "Admin update security post.\n\nSpec wrapper for the `/v1/admin` alias route (same handler as the public path)."
       }
     },
     "/v1/admin/ui/{page}": {
@@ -1123,7 +1144,7 @@
           }
         },
         "security": [],
-        "description": "the RFW page definition (Dash renders it).\nGated on the page's declared Shield action - UI definitions carry no\ntenant data; the decision is the step-5 mirror evaluation (the\nplatform-admin trio rides the live evaluation). Returns 404 for an\nundeclared page."
+        "description": "Admin ui page.\n\nthe RFW page definition (Dash renders it).\nGated on the page's declared Shield action - UI definitions carry no\ntenant data; the decision is the step-5 mirror evaluation (the\nplatform-admin trio rides the live evaluation). Returns 404 for an\nundeclared page."
       }
     },
     "/v1/books/connections": {
@@ -1150,7 +1171,7 @@
           }
         },
         "security": [],
-        "description": "register a book↔connection membership\n(outbox `book-connection:created` + audit journal row)."
+        "description": "Create book connection.\n\nregister a book↔connection membership\n(outbox `book-connection:created` + audit journal row)."
       }
     },
     "/v1/corporate-actions": {
@@ -1177,7 +1198,7 @@
           }
         },
         "security": [],
-        "description": "list corporate actions (RLS-scoped; the\nCA lifecycle calendar view)."
+        "description": "List corporate actions.\n\nlist corporate actions (RLS-scoped; the\nCA lifecycle calendar view)."
       },
       "post": {
         "tags": [
@@ -1202,7 +1223,7 @@
           }
         },
         "security": [],
-        "description": "announce a corporate action (stage\n`announced`; outbox `announced` event; audit journal row)."
+        "description": "Announce corporate action.\n\nannounce a corporate action (stage\n`announced`; outbox `announced` event; audit journal row)."
       }
     },
     "/v1/corporate-actions/calendar": {
@@ -1229,7 +1250,7 @@
           }
         },
         "security": [],
-        "description": "the upcoming-action view\n(calendar rows joined to their actions; CA read scope)."
+        "description": "List ca calendar.\n\nthe upcoming-action view\n(calendar rows joined to their actions; CA read scope)."
       }
     },
     "/v1/corporate-actions/{id}/cancel": {
@@ -1256,7 +1277,7 @@
           }
         },
         "security": [],
-        "description": "withdraw an action while it\nis still `announced` (the stage predicate is the guard: a raced tick\nthat already advanced makes the cancel a 409). Events + journal in the\nsame tx."
+        "description": "Cancel corporate action.\n\nwithdraw an action while it\nis still `announced` (the stage predicate is the guard: a raced tick\nthat already advanced makes the cancel a 409). Events + journal in the\nsame tx."
       }
     },
     "/v1/health": {
@@ -1277,7 +1298,7 @@
           }
         },
         "security": [],
-        "description": "Spec wrapper for the shell-owned `/v1/health` mount."
+        "description": "Refdata health.\n\nSpec wrapper for the shell-owned `/v1/health` mount."
       }
     },
     "/v1/holidays": {
@@ -1304,7 +1325,7 @@
           }
         },
         "security": [],
-        "description": "declare a market holiday (+ per-market closure\nrows; outbox `holiday:created` + audit journal row)."
+        "description": "Create holiday.\n\ndeclare a market holiday (+ per-market closure\nrows; outbox `holiday:created` + audit journal row)."
       }
     },
     "/v1/internal/schedules/run": {
@@ -1358,7 +1379,7 @@
           }
         },
         "security": [],
-        "description": "list markets (RLS-scoped)."
+        "description": "List markets.\n\nlist markets (RLS-scoped)."
       },
       "post": {
         "tags": [
@@ -1383,7 +1404,7 @@
           }
         },
         "security": [],
-        "description": "+ `POST /v1/admin/markets` - create a market."
+        "description": "Create market.\n\n+ `POST /v1/admin/markets` - create a market."
       }
     },
     "/v1/markets/{id}": {
@@ -1410,7 +1431,7 @@
           }
         },
         "security": [],
-        "description": "update a market (guarded, full snapshot event)."
+        "description": "Update market.\n\nupdate a market (guarded, full snapshot event)."
       }
     },
     "/v1/securities": {
@@ -1437,7 +1458,7 @@
           }
         },
         "security": [],
-        "description": "list securities (RLS-scoped)."
+        "description": "List securities.\n\nlist securities (RLS-scoped)."
       },
       "post": {
         "tags": [
@@ -1462,7 +1483,7 @@
           }
         },
         "security": [],
-        "description": "create a security (RLS-scoped insert)."
+        "description": "Create security.\n\ncreate a security (RLS-scoped insert)."
       }
     },
     "/v1/securities/{id}": {
@@ -1489,7 +1510,7 @@
           }
         },
         "security": [],
-        "description": "single lookup."
+        "description": "Get security.\n\nsingle lookup."
       },
       "put": {
         "tags": [
@@ -1514,7 +1535,7 @@
           }
         },
         "security": [],
-        "description": "update mutable security fields. Halting/\ntrading-state changes are Exchange8:ME's (market control) - the refdata\nupdate path carries identity/precision/book fields only."
+        "description": "Update security.\n\nupdate mutable security fields. Halting/\ntrading-state changes are Exchange8:ME's (market control) - the refdata\nupdate path carries identity/precision/book fields only."
       },
       "delete": {
         "tags": [
@@ -1539,7 +1560,7 @@
           }
         },
         "security": [],
-        "description": "remove a security row. Blocked when the\nsecurity is referenced (the FK errors map to 409)."
+        "description": "Delete security.\n\nremove a security row. Blocked when the\nsecurity is referenced (the FK errors map to 409)."
       }
     },
     "/v1/tick-rules": {
@@ -1566,7 +1587,7 @@
           }
         },
         "security": [],
-        "description": "list tick rules."
+        "description": "List tick rules.\n\nlist tick rules."
       },
       "post": {
         "tags": [
@@ -1591,7 +1612,7 @@
           }
         },
         "security": [],
-        "description": "create a tick rule + its bands in one tx\n(outbox `tick-rule:created` + audit journal row)."
+        "description": "Create tick rule.\n\ncreate a tick rule + its bands in one tx\n(outbox `tick-rule:created` + audit journal row)."
       }
     },
     "/v1/tick-rules/{id}": {
@@ -1618,7 +1639,7 @@
           }
         },
         "security": [],
-        "description": "rename a tick rule (band edits are separate\nwrites under the same write scope; renames are the admin-surface\nmutation)."
+        "description": "Update tick rule.\n\nrename a tick rule (band edits are separate\nwrites under the same write scope; renames are the admin-surface\nmutation)."
       }
     }
   },

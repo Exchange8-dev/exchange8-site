@@ -1,1 +1,1 @@
-{"responses":{"200":{"description":"OK","content":{"application/json":{"schema":{}}}},"403":{"description":"Forbidden"}}}
+{"responses":{"101":{"description":"FIX session upgraded (WebSocket framing)"},"403":{"description":"Forbidden"}}}

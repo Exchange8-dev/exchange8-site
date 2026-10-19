@@ -1,0 +1,64 @@
+---
+id: engine-snapshot
+title: "`POST /v1/admin/engine`"
+description: "Read-only: the engine state is read in-process under the shard locks"
+sidebar_label: "`POST /v1/admin/engine`"
+hide_title: true
+hide_table_of_contents: true
+api: eJztVU1vGzcQ/SuDucQGVh+2gyLYIIcUaAoDbV3ILnqQAosix1pGuyTD4coRhP3vwXAVr2UFKYpeq8tqucN58x7fDPeY1JqxnCN90ZVya3ozUqaxDj8WaIh1tCFZ77DEGSkz8q7elZAqAnJr6wg4qURgGSIpA9aNQvSamKF1hmKO5EpFA7XXG164s5X3GwYVCRpqfNyNIrE15NLbHDz77RaCDVRLchVCbYlhRVq1TDlAcCgunOX8qlVdU3zF4B8dfMNWzuSPQe1qL2XxUbkFOJ8gkVMuLVz0j3w+hl9Vop6ZIV2rSAaWT5qUPhqKpWAvIesDrH2g8cIt3HM1nApc+QRnsw9/Q1KrmsCopM7HWKAPFJWIeW2wxH7H/bcdWGAkDt4xMZZ7vJxO5XF8BL+8QJHSsUDtXSKXJD4rpjPK5BPLpj2yrqhR8i/tAmGJKka1wwJtooafrfvVJ9JSyTHqjSOwjlNsG3IZFPwDfI91JjzOVD63NpIRYw1b763BAuUIWu71cPdZWBa3hSgCJdvzXxGne8WboTzJlGhNEQt0bV2fOvRn4gSKN3AW1SMkqzf8FpYSu4R3QE1Iu/MxdkWffGXNv06+sqZPHqLV9COIY9aDxgPMg4+NSv3S1eWJ6teD4gI6yP2Kob26BA5KU/ZVY51t2gbLaXcs6j+h/vT6BHVGnKxbg6QZ5TSgfesSKB09M6x8qiC38Any4VwHUE7RuvUJxF1URiD6eNjQboxdV2CyqaYnkw/0Z/4RO/kV+Hp6cdoUf/gEqk0VuSTOJ4M58uo08oOPK2sMuYzHpNto0w7L+ccCG0qVl74MnqUFgkoVljjZXkxyv0968aVr3IPPLA/1DoOzoROyt1KVewNPQdAQMMWt1blRaqvJMUk+pxpJ9/v1HdzM4H1QuqLR5XgqkDIf7YOl+N2ArsAtRe4Rp+OLfkmINMo9S7388+b2Dl5SWr4sej8MlP+H/n8d+odeSPQlTUKtrJOjaWMtMvcem+P2Agvsb93icC/I/KnEieUc9/uVYvor1l0ny59bigfTblW0AidvXYFVVgnL+R43tMMS32tNQdy8VXWbJ//L66F7bn2xB3bdV2hOzU4=
+sidebar_class_name: "post api-method"
+info_path: docs/api/me/exchange-8-me
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"`POST /v1/admin/engine`"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/v1/admin/engine"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Read-only: the engine state is read in-process under the shard locks
+(books are memory-resident; the RLS pipeline applies because the reader
+is the caller's own process and the payload is engine state, not tenant
+rows). Gate: the declared `exchange8:order:read` admin scope.
+
+the engine snapshot (RFW table data).
+
+<ParamsDetails>
+  
+</ParamsDetails>
+
+<RequestSchema
+  {...require("./engine-snapshot.RequestSchema.json")}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  {...require("./engine-snapshot.StatusCodes.json")}
+>
+  
+</StatusCodes>
+
+
+      

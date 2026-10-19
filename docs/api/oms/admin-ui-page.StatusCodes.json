@@ -1,1 +1,1 @@
-{"responses":{"200":{"description":"OK","content":{"application/json":{"schema":{}}}},"403":{"description":"Forbidden"},"404":{"description":"Unknown page"}}}
+{"responses":{"200":{"description":"RFW page definition","content":{"application/json":{"schema":{"description":"The RFW page-definition document (transparent renderer-contract JSON).","title":"AdminRfwPage"}}}},"403":{"description":"Forbidden"},"404":{"description":"Unknown page"}}}

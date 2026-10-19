@@ -1,1 +1,1 @@
-{"responses":{"200":{"description":"OK","content":{"application/json":{"schema":{}}}},"401":{"description":"Not authenticated"},"403":{"description":"Forbidden"}}}
+{"responses":{"200":{"description":"Algo resumed","content":{"application/json":{"schema":{"type":"object","description":"Algo pause/resume ack.","required":["id","state"],"properties":{"id":{"type":"string","description":"The algo order id."},"state":{"type":"string","description":"The new algo state."}},"title":"AlgoStateAck"}}}},"401":{"description":"Not authenticated"},"403":{"description":"Forbidden"}}}

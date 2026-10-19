@@ -34,6 +34,12 @@ const sidebar: SidebarsConfig = {
         },
         {
           type: "doc",
+          id: "api/me/engine-snapshot",
+          label: "`POST /v1/admin/engine`",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
           id: "api/me/admin-ui-auctions-page",
           label: "`GET /v1/admin/ui/auctions`",
           className: "api-method get",

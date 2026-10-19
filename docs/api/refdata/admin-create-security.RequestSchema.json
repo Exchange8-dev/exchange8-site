@@ -1,1 +1,1 @@
-{"title":"Body"}
+{"title":"Body","body":{"content":{"application/json":{"schema":{"type":"object","required":["symbol","security_type","currency"],"properties":{"currency":{"type":"string"},"isin":{"type":["string","null"]},"min_size":{"type":["integer","null"],"format":"int32"},"price_scale":{"type":["integer","null"],"format":"int32"},"qty_scale":{"type":["integer","null"],"format":"int32"},"security_type":{"type":"string"},"symbol":{"type":"string"}},"title":"CreateSecurityRequest"}}},"required":true}}

@@ -1,1 +1,1 @@
-{"responses":{"200":{"description":"OK","content":{"application/json":{"schema":{}}}},"403":{"description":"Forbidden"}}}
+{"responses":{"200":{"description":"OK","content":{"application/json":{"schema":{"type":"object","description":"CA cancellation ack.","required":["id","cancelled","stage"],"properties":{"cancelled":{"type":"boolean","description":"Always `true`."},"id":{"type":"string","format":"uuid","description":"The cancelled action id."},"stage":{"type":"string","description":"The stage at cancellation."}},"title":"CaCancelAck"}}}},"403":{"description":"Forbidden"}}}

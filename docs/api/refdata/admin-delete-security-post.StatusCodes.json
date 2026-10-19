@@ -1,1 +1,1 @@
-{"responses":{"200":{"description":"OK","content":{"application/json":{"schema":{}}}},"403":{"description":"Forbidden"}}}
+{"responses":{"200":{"description":"OK","content":{"application/json":{"schema":{"type":"object","description":"Security deletion ack.","required":["id","deleted"],"properties":{"deleted":{"type":"boolean","description":"Always `true`."},"id":{"type":"string","format":"uuid","description":"The deleted security id."}},"title":"SecurityDeleteAck"}}}},"403":{"description":"Forbidden"}}}

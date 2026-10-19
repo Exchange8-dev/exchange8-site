@@ -1,1 +1,1 @@
-{"responses":{"200":{"description":"OK","content":{"application/json":{"schema":{}}}},"401":{"description":"Not authenticated"},"403":{"description":"Forbidden"}}}
+{"responses":{"200":{"description":"RFW page definition","content":{"application/json":{"schema":{"description":"The RFW page-definition document (transparent renderer-contract JSON;\nthe local auction/engine page builder emits the renderer contract).","title":"AdminRfwPage"}}}},"401":{"description":"Not authenticated"},"403":{"description":"Forbidden"}}}

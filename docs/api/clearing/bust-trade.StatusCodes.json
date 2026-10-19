@@ -1,1 +1,1 @@
-{"responses":{"200":{"description":"OK","content":{"application/json":{"schema":{}}}},"401":{"description":"Not authenticated"},"403":{"description":"Forbidden"}}}
+{"responses":{"200":{"description":"Trade busted","content":{"application/json":{"schema":{"type":"object","required":["trade_id","busted"],"properties":{"busted":{"type":"boolean"},"trade_id":{"type":"integer","format":"int64"}},"title":"BustResponse"}}}},"401":{"description":"Not authenticated"},"403":{"description":"Forbidden"}}}

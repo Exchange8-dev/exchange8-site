@@ -1,1 +1,1 @@
-{"title":"Body"}
+{"title":"Body","body":{"content":{"application/json":{"schema":{"type":"object","properties":{"ebbo_enabled":{"type":["boolean","null"]},"hidden_orders":{"type":["boolean","null"]},"lot_size":{"type":["integer","null"],"format":"int32"},"market_code":{"type":["string","null"]},"market_mode":{"type":["string","null"]},"market_type":{"type":["string","null"]},"mic":{"type":["string","null"]},"name":{"type":["string","null"]},"regulation":{"type":["string","null"]}},"title":"UpdateMarketRequest"}}},"required":true}}

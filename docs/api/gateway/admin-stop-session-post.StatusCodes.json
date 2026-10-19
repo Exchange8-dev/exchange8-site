@@ -1,1 +1,1 @@
-{"responses":{"200":{"description":"OK","content":{"application/json":{"schema":{}}}},"403":{"description":"Forbidden"}}}
+{"responses":{"200":{"description":"OK","content":{"application/json":{"schema":{"type":"object","description":"Session-stop ack (OAPEC-9 typed body).","required":["id","stopped"],"properties":{"id":{"type":"string","format":"uuid","description":"The stopped session id."},"stopped":{"type":"boolean","description":"Always `true`."}},"title":"SessionStopAck"}}}},"403":{"description":"Forbidden"}}}

@@ -1,0 +1,114 @@
+{
+  "gateway": {
+    "specPath": "openapi/gateway-spec.json",
+    "outputDir": "docs/api/gateway",
+    "sidebarOptions": {
+      "groupPathsBy": "tag",
+      "categoryLinkSource": "info"
+    }
+  },
+  "me": {
+    "specPath": "openapi/me-spec.json",
+    "outputDir": "docs/api/me",
+    "sidebarOptions": {
+      "groupPathsBy": "tag",
+      "categoryLinkSource": "info"
+    }
+  },
+  "oms": {
+    "specPath": "openapi/oms-spec.json",
+    "outputDir": "docs/api/oms",
+    "sidebarOptions": {
+      "groupPathsBy": "tag",
+      "categoryLinkSource": "info"
+    }
+  },
+  "risk": {
+    "specPath": "openapi/risk-spec.json",
+    "outputDir": "docs/api/risk",
+    "sidebarOptions": {
+      "groupPathsBy": "tag",
+      "categoryLinkSource": "info"
+    }
+  },
+  "md": {
+    "specPath": "openapi/md-spec.json",
+    "outputDir": "docs/api/md",
+    "sidebarOptions": {
+      "groupPathsBy": "tag",
+      "categoryLinkSource": "info"
+    }
+  },
+  "sor": {
+    "specPath": "openapi/sor-spec.json",
+    "outputDir": "docs/api/sor",
+    "sidebarOptions": {
+      "groupPathsBy": "tag",
+      "categoryLinkSource": "info"
+    }
+  },
+  "clearing": {
+    "specPath": "openapi/clearing-spec.json",
+    "outputDir": "docs/api/clearing",
+    "sidebarOptions": {
+      "groupPathsBy": "tag",
+      "categoryLinkSource": "info"
+    }
+  },
+  "settlement": {
+    "specPath": "openapi/settlement-spec.json",
+    "outputDir": "docs/api/settlement",
+    "sidebarOptions": {
+      "groupPathsBy": "tag",
+      "categoryLinkSource": "info"
+    }
+  },
+  "margin": {
+    "specPath": "openapi/margin-spec.json",
+    "outputDir": "docs/api/margin",
+    "sidebarOptions": {
+      "groupPathsBy": "tag",
+      "categoryLinkSource": "info"
+    }
+  },
+  "rfq": {
+    "specPath": "openapi/rfq-spec.json",
+    "outputDir": "docs/api/rfq",
+    "sidebarOptions": {
+      "groupPathsBy": "tag",
+      "categoryLinkSource": "info"
+    }
+  },
+  "refdata": {
+    "specPath": "openapi/refdata-spec.json",
+    "outputDir": "docs/api/refdata",
+    "sidebarOptions": {
+      "groupPathsBy": "tag",
+      "categoryLinkSource": "info"
+    }
+  },
+  "regulatory": {
+    "specPath": "openapi/regulatory-spec.json",
+    "outputDir": "docs/api/regulatory",
+    "sidebarOptions": {
+      "groupPathsBy": "tag",
+      "categoryLinkSource": "info"
+    }
+  },
+  "surveillance": {
+    "specPath": "openapi/surveillance-spec.json",
+    "outputDir": "docs/api/surveillance",
+    "sidebarOptions": {
+      "groupPathsBy": "tag",
+      "categoryLinkSource": "info"
+    }
+  },
+  "vfeeds": {
+    "specPath": "openapi/vfeeds-spec.json",
+    "outputDir": "docs/api/vfeeds",
+    "sidebarOptions": {
+      "groupPathsBy": "tag",
+      "categoryLinkSource": "info"
+    }
+  }
+}

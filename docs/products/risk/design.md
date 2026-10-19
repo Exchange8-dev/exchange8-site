@@ -401,7 +401,7 @@ flowchart TD
     E -->|network / 5xx| G["relay_attempts++; leave unrelayed; backoff retry"]
     G --> B
     F --> H["Bus stream family (XADD)"]
-    H -->|direct consumer, SSE (BUSCONNP-1)| I1["Exchange8:Clearing consumes (limit/reservation audit)"]
+    H -->|"direct consumer, SSE (BUSCONNP-1)"| I1["Exchange8:Clearing consumes (limit/reservation audit)"]
     H -->|direct consumer, SSE| I2["Exchange8:Surveillance consumers where declared"]
     H -->|subscription| I3["Trigger subscription (consumer group) → function / workflow where declared"]
 ```

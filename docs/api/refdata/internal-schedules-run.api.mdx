@@ -1,0 +1,71 @@
+---
+id: internal-schedules-run
+title: "`POST /v1/internal/schedules/run` — Sentin8:Cron proxy-back target for
+the corporate-action transition worker (the platform secrets
+precedent: the ticker calls back with its own workload certificate,
+verified like any other principal; step 5 evaluates the dedicated
+transition action and the mirror admits the cron workload's
+`sentin8:cron:write`)."
+description: "Returns `{ advanced }` for the schedule's env. A 500 is a DB failure —"
+sidebar_label: "`POST /v1/internal/schedules/run` — Sentin8:Cron proxy-back target for
+the corporate-action transition worker (the platform secrets
+precedent: the ticker calls back with its own workload certificate,
+verified like any other principal; step 5 evaluates the dedicated
+transition action and the mirror admits the cron workload's
+`sentin8:cron:write`)."
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVFFu20YQvcpgfuIAlCUnDRCwX27SAkHROkicL8mIxrtDc2tqdzM7pC0IBHqInrAnKUaUHKduD5AvEruDN+/Nvjc7VLopWC9RuPGkNAtRWSJ1eFWh5+IkZA0pYo0fWHuJBdY7ID9QdOxhXEOTBLRlKK5l33f8rADH4RTO4dViAaEAwdufoKHQ9cLw959/raKTFEFYJXCBu6AtXJO7TU0DFP0EpnTDsyzsgyNlD5/evz2//BmEZ9LHsoonwfMmJ+WokCKsT8gZTQi+AiW5YZ0wnq+fn2KFKbOQFbzzWONR4+cj5/JZ+ogVCpecYuGC9Q5fLBb2+XYIF79ihS5Fa2y3lHNnFEOK8z+KlezQUDeE9W4cx7HCHxZnT3F+TwrUa8tRJ4W4r3z5tPKXJNfBe45oYIVdL0G3WC+vKtywtskU5VQUK8ykLdY4H87mR43zB43zSWOITbIuGrRjrJHvXUvxhl/PDhbAfz/8RyMZX8NDJRwqobAMwbFNuAuOY2FDjrQx4N/eXcLFBzjP5FqevThdWHNvWE1g+c+CscKBpUxtF6dn05GJ21B8BL1+f/HxEv5f5tp8Bgfe9RuzW5Z0v52Zz47+aJKsopnNJclJSHl2MJEKxRL2v3dJblngxOpyR9ok2UBhJ6xlFbOwY5NU712rwVmxo64re0tP5g5aIN1NWF0iD47FhmDvXq3iwGIT8dCFWwaKW0jaskCWEF3I1P0IRTnDK+CBup6Uy76bP4ZjFR8RPkg4BmkTRJIA+Y2x2KuV9JXKs7KK63KYk93UdxKUp9B844LdV9d/15tAt9kcpHyv89xRiOawXjpTOMVnicPZPieHRVjhg7dsRfTRVmNrgauXuNtdU+FP0o2jHX/pWQ7ZHEgCXVvElldjhS2TN9cvd3jLW6zx3DnOFlp7VKP0ZJWMjxNujsdx/Ae+2P5C
+sidebar_class_name: "post api-method"
+info_path: docs/api/refdata/exchange-8-refdata
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"`POST /v1/internal/schedules/run` — Sentin8:Cron proxy-back target for\nthe corporate-action transition worker (the platform secrets\nprecedent: the ticker calls back with its own workload certificate,\nverified like any other principal; step 5 evaluates the dedicated\ntransition action and the mirror admits the cron workload's\n`sentin8:cron:write`)."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/v1/internal/schedules/run"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Returns `{ advanced }` for the schedule's env. A 500 is a DB failure —
+cron retries with backoff and the stage-predicated UPDATE re-runs
+(idempotent on `(action id, target stage)`).
+
+<ParamsDetails>
+  
+</ParamsDetails>
+
+<RequestSchema
+  {...require("./internal-schedules-run.RequestSchema.json")}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  {...require("./internal-schedules-run.StatusCodes.json")}
+>
+  
+</StatusCodes>
+
+
+      

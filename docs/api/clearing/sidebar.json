@@ -1,0 +1,258 @@
+[
+  {
+    "type": "category",
+    "label": "clearing",
+    "link": {
+      "type": "doc",
+      "id": "api/clearing/exchange-8-clearing"
+    },
+    "items": [
+      {
+        "type": "doc",
+        "id": "api/clearing/exchange-8-clearing",
+        "label": "Overview",
+        "className": "api-overview"
+      },
+      {
+        "type": "category",
+        "label": "v1",
+        "link": {
+          "type": "doc",
+          "id": "api/clearing/policy-delete-attribute-path"
+        },
+        "items": [
+          {
+            "type": "category",
+            "label": "v1/admin",
+            "link": {
+              "type": "doc",
+              "id": "api/clearing/policy-delete-attribute-path"
+            },
+            "items": [
+              {
+                "type": "category",
+                "label": "v1/admin/attributes",
+                "link": {
+                  "type": "doc",
+                  "id": "api/clearing/policy-delete-attribute-path"
+                },
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "api/clearing/policy-delete-attribute-path",
+                    "label": "`POST v1/admin/attributes/{id}/delete`",
+                    "className": "api-method post"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "api/clearing/policy-delete-attribute",
+                    "label": "`DELETE v1/admin/attributes`",
+                    "className": "api-method delete"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "api/clearing/policy-list-attributes",
+                    "label": "`GET v1/admin/attributes`",
+                    "className": "api-method get"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "api/clearing/policy-put-attribute",
+                    "label": "`PUT v1/admin/attributes`",
+                    "className": "api-method put"
+                  }
+                ],
+                "collapsed": true
+              },
+              {
+                "type": "doc",
+                "id": "api/clearing/admin-list-orders",
+                "label": "`GET v1/admin/orders`",
+                "className": "api-method get"
+              },
+              {
+                "type": "doc",
+                "id": "api/clearing/policy-list-decisions",
+                "label": "`GET v1/admin/policy-decisions`",
+                "className": "api-method get"
+              },
+              {
+                "type": "category",
+                "label": "v1/admin/policy-sets",
+                "link": {
+                  "type": "doc",
+                  "id": "api/clearing/policy-flip-set"
+                },
+                "items": [
+                  {
+                    "type": "category",
+                    "label": "v1/admin/policy-sets/{name}",
+                    "link": {
+                      "type": "doc",
+                      "id": "api/clearing/policy-flip-set"
+                    },
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "api/clearing/policy-flip-set",
+                        "label": "`POST v1/admin/policy-sets/{name}/{action}`",
+                        "className": "api-method post"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "api/clearing/policy-save-set",
+                        "label": "`POST v1/admin/policy-sets/{name}/save`",
+                        "className": "api-method post"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "api/clearing/policy-test-set",
+                        "label": "`POST v1/admin/policy-sets/{name}/test`",
+                        "className": "api-method post"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "api/clearing/policy-delete-set",
+                        "label": "`DELETE v1/admin/policy-sets/{name}`",
+                        "className": "api-method delete"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "api/clearing/policy-get-set",
+                        "label": "`GET v1/admin/policy-sets/{name}`",
+                        "className": "api-method get"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "api/clearing/policy-put-set",
+                        "label": "`PUT v1/admin/policy-sets/{name}`",
+                        "className": "api-method put"
+                      }
+                    ],
+                    "collapsed": true
+                  },
+                  {
+                    "type": "doc",
+                    "id": "api/clearing/policy-mode-disable",
+                    "label": "`POST v1/admin/policy-sets/disable`",
+                    "className": "api-method post"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "api/clearing/policy-mode-enforce",
+                    "label": "`POST v1/admin/policy-sets/enforce`",
+                    "className": "api-method post"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "api/clearing/policy-mode-shadow",
+                    "label": "`POST v1/admin/policy-sets/shadow`",
+                    "className": "api-method post"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "api/clearing/policy-list-sets",
+                    "label": "`GET v1/admin/policy-sets`",
+                    "className": "api-method get"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "api/clearing/policy-create-set",
+                    "label": "`POST v1/admin/policy-sets`",
+                    "className": "api-method post"
+                  }
+                ],
+                "collapsed": true
+              },
+              {
+                "type": "category",
+                "label": "v1/admin/relations",
+                "link": {
+                  "type": "doc",
+                  "id": "api/clearing/policy-delete-relation-path"
+                },
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "api/clearing/policy-delete-relation-path",
+                    "label": "`POST v1/admin/relations/{id}/delete`",
+                    "className": "api-method post"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "api/clearing/policy-check-relation",
+                    "label": "`GET v1/admin/relations/check`",
+                    "className": "api-method get"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "api/clearing/policy-delete-relation",
+                    "label": "`DELETE v1/admin/relations`",
+                    "className": "api-method delete"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "api/clearing/policy-list-relations",
+                    "label": "`GET v1/admin/relations`",
+                    "className": "api-method get"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "api/clearing/policy-put-relation",
+                    "label": "`PUT v1/admin/relations`",
+                    "className": "api-method put"
+                  }
+                ],
+                "collapsed": true
+              },
+              {
+                "type": "doc",
+                "id": "api/clearing/admin-list-trades",
+                "label": "`GET v1/admin/trades`",
+                "className": "api-method get"
+              }
+            ],
+            "collapsed": true
+          },
+          {
+            "type": "doc",
+            "id": "api/clearing/clearing-health",
+            "label": "`GET v1/health`",
+            "className": "api-method get"
+          },
+          {
+            "type": "doc",
+            "id": "api/clearing/list-orders",
+            "label": "`GET v1/orders`",
+            "className": "api-method get"
+          },
+          {
+            "type": "category",
+            "label": "v1/trades",
+            "link": {
+              "type": "doc",
+              "id": "api/clearing/bust-trade"
+            },
+            "items": [
+              {
+                "type": "doc",
+                "id": "api/clearing/bust-trade",
+                "label": "`POST v1/trades/bust`",
+                "className": "api-method post"
+              },
+              {
+                "type": "doc",
+                "id": "api/clearing/list-trades",
+                "label": "`GET v1/trades`",
+                "className": "api-method get"
+              }
+            ],
+            "collapsed": true
+          }
+        ],
+        "collapsed": true
+      }
+    ],
+    "collapsed": true
+  }
+]

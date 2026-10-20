@@ -3,7 +3,7 @@
   "name": "Exchange8",
   "org": "Exchange8-dev",
   "domain": "exchange8.dev",
-  "tagline": "Capital markets on Sentin8 - a deterministic matching engine with FIX/OUCH access, peg and algorithmic order supervision, smart order routing, clearing, margin, and multi-jurisdiction regulation.",
+  "tagline": "Secure Post-Quantum-Safe Securities Exchange Platform That Heals and Scales Itself.",
   "accent": "#2E9B8F",
   "pillarsLead": "Exchange8 inherits the Sentin8 security model and adds market guarantees - deterministic matching, reproducible event sourcing, and synchronous pre-trade authorization on every order.",
   "pillars": [

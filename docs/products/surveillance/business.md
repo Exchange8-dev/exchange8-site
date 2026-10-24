@@ -223,5 +223,5 @@ custom_edit_url: https://github.com/Exchange8-dev/exchange8-surveillance/edit/ma
 
 ---
 
-**Design attribution:** exchange8:surveillance and its underlying concepts were designed by Hamid Jahanzad <Hamid@Jahanzad.com>.
+**Architecture & Design:** exchange8:surveillance and its underlying concepts were designed by [Hamid Jahanzad](https://www.linkedin.com/in/hamidjahanzad/).
 

@@ -226,5 +226,5 @@ service's authorization surface) via the platform consumption path.
 
 ---
 
-**Design attribution:** exchange8:vfeeds and its underlying concepts were designed by Hamid Jahanzad <Hamid@Jahanzad.com>.
+**Architecture & Design:** exchange8:vfeeds and its underlying concepts were designed by [Hamid Jahanzad](https://www.linkedin.com/in/hamidjahanzad/).
 

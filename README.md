@@ -1,4 +1,4 @@
-# README.md: Exchange8:Site - exchange8.dev
+# Exchange8:Site - exchange8.dev
 
 > The Exchange8 public website at [exchange8.dev](https://exchange8.dev): every
 > product, app, and SDK of the vertical, with its domain invariants

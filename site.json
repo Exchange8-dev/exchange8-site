@@ -3,7 +3,7 @@
   "name": "Exchange8",
   "org": "Exchange8-dev",
   "domain": "exchange8.dev",
-  "tagline": "Open-Source Post-Quantum Securities Exchange Platform (Apache 2.0): matching engine and market data in Rust - heals and scales itself.",
+  "tagline": "Open-Source Post-Quantum Securities Exchange Platform - Matching Engine and Market Data That Heals and Scales Itself.",
   "accent": "#2E9B8F",
   "pillarsLead": "Exchange8 inherits the Sentin8 security model and adds market guarantees - deterministic matching, reproducible event sourcing, and synchronous pre-trade authorization on every order.",
   "pillars": [
@@ -237,5 +237,6 @@
       "href": "https://trade8.dev/"
     }
   ],
-  "crossrefs": []
+  "crossrefs": [],
+  "heroTagline": "Open-Source Post-Quantum Securities Exchange Platform - matching engine and market data; heals and scales itself."
 }

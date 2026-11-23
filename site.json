@@ -4,6 +4,9 @@
   "org": "Exchange8-dev",
   "domain": "exchange8.dev",
   "tagline": "Open-Source Secure Post-Quantum-Safe Securities Exchange Platform That Heals and Scales Itself.",
+  "heroEyebrow": "Open-Source Securities Exchange",
+  "heroTitle": "Exchange8: Autonomous Quantum-Safe Securities Exchange",
+  "heroDescription": "A full securities venue in software: FIX market access, a deterministic price-time matching engine, synchronous pre-trade risk, smart order routing to external venues, an event-sourced clearing ledger, margin and settlement, consolidated market data, plus surveillance and multi-jurisdiction reporting. Every tier is driven by the same order and trade events, so the venue's truth is reproducible end to end.",
   "accent": "#2E9B8F",
   "pillarsLead": "Exchange8 inherits the Sentin8 security model and adds market guarantees - deterministic matching, reproducible event sourcing, and synchronous pre-trade authorization on every order.",
   "pillars": [
@@ -237,6 +240,5 @@
       "href": "https://trade8.dev/"
     }
   ],
-  "crossrefs": [],
-  "heroTagline": "Open-Source Post-Quantum Securities Exchange Platform - matching engine and market data; heals and scales itself."
+  "crossrefs": []
 }
